@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net9.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="AspNetCore.HealthChecks.SqlServer" Version="9.0.0" />
+		<PackageReference Include="AspNetCore.HealthChecks.UI" Version="9.0.0" />
+		<PackageReference Include="AspNetCore.HealthChecks.UI.Client" Version="9.0.0" />
+		<PackageReference Include="AspNetCore.HealthChecks.UI.InMemory.Storage" Version="8.0.1" />
+		<PackageReference Include="MediatR" Version="12.4.1" />
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="9.0.2" />
+		<PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.2" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.2">
+		  <PrivateAssets>all</PrivateAssets>
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.2" />
+		<PackageReference Include="NLog.Web.AspNetCore" Version="5.4.0" />
+		<PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="7.3.0" />
+		<PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="7.3.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\..\02.Shared\Shared\Shared.csproj" />
+		<ProjectReference Include="..\..\03.Queues\Queues.Functions\Queues.Functions.csproj" />
+		<ProjectReference Include="..\Domain\Domain.csproj" />
+		<ProjectReference Include="..\Infraestructure\Infraestructure.csproj" />
+	</ItemGroup>
+
+
+	<PropertyGroup>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<NoWarn>$(NoWarn);1591</NoWarn>
+	</PropertyGroup>
+	
+</Project>

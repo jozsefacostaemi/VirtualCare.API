@@ -1,0 +1,1470 @@
+2025-03-13 14:55:30.0648 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-13 14:55:30.0872 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-13 14:55:30.1535 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-13 14:55:30.1535 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-13 14:55:30.1535 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-13 14:55:30.1535 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-13 14:55:30.1838 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\VirtualCare\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-13 14:55:30.1940 Info Configuration initialized.
+2025-03-13 14:55:31.2604 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\VirtualCare\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-13 15:00:02.5693 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-13 15:00:02.5800 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-13 15:00:02.6378 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-13 15:00:02.6378 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-13 15:00:02.6378 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-13 15:00:02.6378 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-13 15:00:02.6739 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\VirtualCare\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-13 15:00:02.6850 Info Configuration initialized.
+2025-03-13 15:00:03.7415 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\VirtualCare\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-13 15:08:31.8622 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-13 15:08:31.8716 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-13 15:08:31.9340 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-13 15:08:31.9348 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-13 15:08:31.9348 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-13 15:08:31.9348 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-13 15:08:31.9733 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\VirtualCare\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-13 15:08:31.9889 Info Configuration initialized.
+2025-03-13 15:08:34.4854 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\VirtualCare\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-13 15:13:03.8475 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-13 15:13:03.8640 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-13 15:13:03.9223 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-13 15:13:03.9223 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-13 15:13:03.9223 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-13 15:13:03.9223 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-13 15:13:03.9554 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\VirtualCare\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-13 15:13:03.9554 Info Configuration initialized.
+2025-03-13 15:13:05.0558 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\VirtualCare\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-13 15:18:52.0061 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-13 15:18:52.0225 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-13 15:18:52.0925 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-13 15:18:52.0925 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-13 15:18:52.0925 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-13 15:18:52.0925 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-13 15:18:52.1240 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\VirtualCare\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-13 15:18:52.1240 Info Configuration initialized.
+2025-03-13 15:18:53.1507 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\VirtualCare\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-13 15:25:30.9624 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-13 15:25:30.9731 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-13 15:25:31.0326 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-13 15:25:31.0326 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-13 15:25:31.0326 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-13 15:25:31.0326 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-13 15:25:31.0653 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\VirtualCare\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-13 15:25:31.0748 Info Configuration initialized.
+2025-03-13 15:26:45.6987 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-13 15:26:45.7155 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-13 15:26:45.7939 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-13 15:26:45.7945 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-13 15:26:45.7945 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-13 15:26:45.7945 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-13 15:26:45.8482 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\VirtualCare\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-13 15:26:45.8582 Info Configuration initialized.
+2025-03-13 15:26:47.6321 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\VirtualCare\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-13 15:51:27.6789 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-13 15:51:27.6936 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-13 15:51:27.7649 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-13 15:51:27.7649 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-13 15:51:27.7649 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-13 15:51:27.7649 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-13 15:51:27.8004 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\VirtualCare\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-13 15:51:27.8138 Info Configuration initialized.
+2025-03-13 15:51:29.2128 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\VirtualCare\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-13 15:51:52.6092 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-13 15:51:52.6263 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-13 15:51:52.6929 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-13 15:51:52.6929 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-13 15:51:52.6929 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-13 15:51:52.6929 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-13 15:51:52.7938 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\VirtualCare\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-13 15:51:52.7938 Info Configuration initialized.
+2025-03-13 15:52:37.3278 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-13 15:52:37.3399 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-13 15:52:37.4033 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-13 15:52:37.4042 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-13 15:52:37.4042 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-13 15:52:37.4042 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-13 15:52:37.4410 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\VirtualCare\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-13 15:52:37.4551 Info Configuration initialized.
+2025-03-13 15:52:38.4690 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\VirtualCare\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-13 16:02:56.1939 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-13 16:02:56.2069 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-13 16:02:56.2662 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-13 16:02:56.2662 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-13 16:02:56.2662 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-13 16:02:56.2662 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-13 16:02:56.3081 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\VirtualCare\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-13 16:02:56.3239 Info Configuration initialized.
+2025-03-13 16:02:57.5189 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\VirtualCare\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-13 16:16:26.9986 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-13 16:16:27.0181 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-13 16:16:27.1014 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-13 16:16:27.1014 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-13 16:16:27.1014 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-13 16:16:27.1100 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-13 16:16:27.1382 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\VirtualCare\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-13 16:16:27.1382 Info Configuration initialized.
+2025-03-13 16:16:30.1042 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\VirtualCare\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-13 16:19:31.9493 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-13 16:19:31.9627 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-13 16:19:32.0203 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-13 16:19:32.0203 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-13 16:19:32.0203 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-13 16:19:32.0203 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-13 16:19:32.0513 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\VirtualCare\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-13 16:19:32.0616 Info Configuration initialized.
+2025-03-13 16:19:33.0997 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\VirtualCare\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-13 16:20:02.3816 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-13 16:20:02.3924 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-13 16:20:02.4567 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-13 16:20:02.4567 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-13 16:20:02.4567 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-13 16:20:02.4656 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-13 16:20:02.4915 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\VirtualCare\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-13 16:20:02.5066 Info Configuration initialized.
+2025-03-13 16:20:03.4956 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\VirtualCare\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-13 16:21:12.4411 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-13 16:21:12.4528 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-13 16:21:12.5236 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-13 16:21:12.5236 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-13 16:21:12.5236 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-13 16:21:12.5304 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-13 16:21:12.5630 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\VirtualCare\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-13 16:21:12.5757 Info Configuration initialized.
+2025-03-13 16:21:13.7969 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\VirtualCare\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-13 16:23:03.1295 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-13 16:23:03.1448 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-13 16:23:03.2287 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-13 16:23:03.2287 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-13 16:23:03.2287 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-13 16:23:03.2370 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-13 16:23:03.2771 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\VirtualCare\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-13 16:23:03.2954 Info Configuration initialized.
+2025-03-13 16:23:04.3558 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\VirtualCare\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-17 14:31:49.6214 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-17 14:31:49.6333 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-17 14:31:49.6829 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-17 14:31:49.6829 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-17 14:31:49.6829 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-17 14:31:49.6868 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-17 14:31:49.7075 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-17 14:31:49.7152 Info Configuration initialized.
+2025-03-17 14:31:51.6573 Info Shutdown() called. Logger closing...
+2025-03-17 14:31:51.6573 Info Closing old configuration.
+2025-03-17 14:31:51.6573 Info Logger has been closed down.
+2025-03-17 14:31:51.6573 Info AppDomain Shutting down. LogFactory closing...
+2025-03-17 14:31:51.6675 Info LogFactory has been closed.
+2025-03-17 14:32:48.6767 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-17 14:32:48.6873 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-17 14:32:48.7428 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-17 14:32:48.7428 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-17 14:32:48.7428 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-17 14:32:48.7480 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-17 14:32:48.7670 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-17 14:32:48.7670 Info Configuration initialized.
+2025-03-17 14:32:49.5538 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-17 14:34:46.0433 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-17 14:34:46.0543 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-17 14:34:46.1033 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-17 14:34:46.1033 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-17 14:34:46.1033 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-17 14:34:46.1072 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-17 14:34:46.1300 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-17 14:34:46.1379 Info Configuration initialized.
+2025-03-17 14:34:46.9015 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-17 16:55:31.7582 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-17 16:55:31.7740 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-17 16:55:31.8719 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-17 16:55:31.8719 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-17 16:55:31.8719 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-17 16:55:31.8719 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-17 16:55:31.9223 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-17 16:55:31.9355 Info Configuration initialized.
+2025-03-17 16:55:35.1712 Info Shutdown() called. Logger closing...
+2025-03-17 16:55:35.1712 Info Closing old configuration.
+2025-03-17 16:55:35.1712 Info Logger has been closed down.
+2025-03-17 16:55:35.1712 Info AppDomain Shutting down. LogFactory closing...
+2025-03-17 16:55:35.1837 Info LogFactory has been closed.
+2025-03-17 16:57:13.0527 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-17 16:57:13.0650 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-17 16:57:13.1238 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-17 16:57:13.1238 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-17 16:57:13.1238 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-17 16:57:13.1238 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-17 16:57:13.1527 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-17 16:57:13.1637 Info Configuration initialized.
+2025-03-17 16:57:14.1133 Info Shutdown() called. Logger closing...
+2025-03-17 16:57:14.1133 Info Closing old configuration.
+2025-03-17 16:57:14.1241 Info Logger has been closed down.
+2025-03-17 16:57:14.1241 Info AppDomain Shutting down. LogFactory closing...
+2025-03-17 16:57:14.1241 Info LogFactory has been closed.
+2025-03-17 16:57:29.4796 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-17 16:57:29.4918 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-17 16:57:29.5494 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-17 16:57:29.5494 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-17 16:57:29.5494 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-17 16:57:29.5494 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-17 16:57:29.5786 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-17 16:57:29.5950 Info Configuration initialized.
+2025-03-17 16:59:31.8254 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-17 16:59:31.8376 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-17 16:59:31.8976 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-17 16:59:31.8976 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-17 16:59:31.8976 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-17 16:59:31.9035 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-17 16:59:31.9339 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-17 16:59:31.9339 Info Configuration initialized.
+2025-03-17 16:59:33.1202 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-17 16:59:53.4739 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-17 16:59:53.4861 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-17 16:59:53.5436 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-17 16:59:53.5436 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-17 16:59:53.5436 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-17 16:59:53.5436 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-17 16:59:53.5765 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-17 16:59:53.5765 Info Configuration initialized.
+2025-03-17 16:59:54.5060 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-17 17:01:41.1095 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-17 17:01:41.1213 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-17 17:01:41.1867 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-17 17:01:41.1867 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-17 17:01:41.1867 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-17 17:01:41.1867 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-17 17:01:41.2254 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-17 17:01:41.2388 Info Configuration initialized.
+2025-03-17 17:01:42.7389 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-17 17:02:17.5708 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-17 17:02:17.5869 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-17 17:02:17.6578 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-17 17:02:17.6578 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-17 17:02:17.6578 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-17 17:02:17.6578 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-17 17:02:17.6946 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-17 17:02:17.7058 Info Configuration initialized.
+2025-03-17 17:02:18.8125 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-17 17:02:29.5161 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-17 17:02:29.5317 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-17 17:02:29.5882 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-17 17:02:29.5882 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-17 17:02:29.5882 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-17 17:02:29.5940 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-17 17:02:29.6209 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-17 17:02:29.6329 Info Configuration initialized.
+2025-03-17 17:02:30.6414 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-17 17:04:54.0554 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-17 17:04:54.0708 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-17 17:04:54.1550 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-17 17:04:54.1550 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-17 17:04:54.1550 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-17 17:04:54.1550 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-17 17:04:54.1941 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-17 17:04:54.2064 Info Configuration initialized.
+2025-03-17 17:04:55.4654 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-17 17:07:35.9734 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-17 17:07:35.9857 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-17 17:07:36.0482 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-17 17:07:36.0482 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-17 17:07:36.0482 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-17 17:07:36.0482 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-17 17:07:36.0803 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-17 17:07:36.0911 Info Configuration initialized.
+2025-03-17 17:07:37.4284 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-17 17:08:04.5303 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-17 17:08:04.5447 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-17 17:08:04.6096 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-17 17:08:04.6096 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-17 17:08:04.6096 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-17 17:08:04.6096 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-17 17:08:04.6435 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-17 17:08:04.6540 Info Configuration initialized.
+2025-03-17 17:08:05.6315 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-17 17:09:12.6746 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-17 17:09:12.6875 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-17 17:09:12.7427 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-17 17:09:12.7427 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-17 17:09:12.7427 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-17 17:09:12.7482 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-17 17:09:12.7714 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-17 17:09:12.7823 Info Configuration initialized.
+2025-03-17 17:09:13.8019 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-17 17:11:08.9123 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-17 17:11:08.9258 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-17 17:11:09.0174 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-17 17:11:09.0174 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-17 17:11:09.0174 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-17 17:11:09.0174 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-17 17:11:09.0662 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-17 17:11:09.0801 Info Configuration initialized.
+2025-03-17 17:11:12.2288 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-17 17:11:29.4341 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-17 17:11:29.4462 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-17 17:11:29.4983 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-17 17:11:29.4983 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-17 17:11:29.4983 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-17 17:11:29.4983 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-17 17:11:29.5286 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-17 17:11:29.5286 Info Configuration initialized.
+2025-03-17 17:11:30.5225 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-17 17:11:41.2680 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-17 17:11:41.2847 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-17 17:11:41.3600 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-17 17:11:41.3600 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-17 17:11:41.3600 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-17 17:11:41.3600 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-17 17:11:41.3952 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-17 17:11:41.4060 Info Configuration initialized.
+2025-03-17 17:11:42.4280 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-17 17:11:53.1916 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-17 17:11:53.2052 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-17 17:11:53.2739 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-17 17:11:53.2739 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-17 17:11:53.2739 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-17 17:11:53.2814 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-17 17:11:53.3105 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-17 17:11:53.3105 Info Configuration initialized.
+2025-03-17 17:11:54.2539 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-17 17:14:02.5119 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-17 17:14:02.5271 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-17 17:14:02.6001 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-17 17:14:02.6001 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-17 17:14:02.6001 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-17 17:14:02.6079 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-17 17:14:02.6386 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-17 17:14:02.6541 Info Configuration initialized.
+2025-03-17 17:14:03.8003 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-17 17:14:25.9898 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-17 17:14:26.0046 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-17 17:14:26.0666 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-17 17:14:26.0666 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-17 17:14:26.0666 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-17 17:14:26.0666 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-17 17:14:26.0964 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-17 17:14:26.1077 Info Configuration initialized.
+2025-03-17 17:14:42.2289 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-17 17:16:18.8130 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-17 17:16:18.8271 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-17 17:16:18.8851 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-17 17:16:18.8851 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-17 17:16:18.8851 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-17 17:16:18.8913 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-17 17:16:18.9154 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-17 17:16:18.9263 Info Configuration initialized.
+2025-03-17 17:16:23.1649 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-17 17:16:36.0410 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-17 17:16:36.0571 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-17 17:16:36.1241 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-17 17:16:36.1241 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-17 17:16:36.1241 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-17 17:16:36.1241 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-17 17:16:36.1651 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-17 17:16:36.1801 Info Configuration initialized.
+2025-03-17 17:16:37.1761 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-17 17:17:35.0592 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-17 17:17:35.0710 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-17 17:17:35.1267 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-17 17:17:35.1267 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-17 17:17:35.1267 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-17 17:17:35.1267 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-17 17:17:35.1621 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-17 17:17:35.1731 Info Configuration initialized.
+2025-03-17 17:17:36.1179 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-17 17:21:13.0360 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-17 17:21:13.0477 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-17 17:21:13.1116 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-17 17:21:13.1116 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-17 17:21:13.1116 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-17 17:21:13.1116 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-17 17:21:13.1493 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-17 17:21:13.1608 Info Configuration initialized.
+2025-03-17 17:21:14.0693 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-17 17:21:39.0418 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-17 17:21:39.0524 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-17 17:21:39.1088 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-17 17:21:39.1088 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-17 17:21:39.1088 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-17 17:21:39.1088 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-17 17:21:39.1410 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-17 17:21:39.1556 Info Configuration initialized.
+2025-03-17 17:21:40.1566 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-17 17:21:50.1191 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-17 17:21:50.1309 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-17 17:21:50.1944 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-17 17:21:50.1944 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-17 17:21:50.1944 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-17 17:21:50.2032 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-17 17:21:50.2302 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-17 17:21:50.2426 Info Configuration initialized.
+2025-03-17 17:21:51.2927 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-17 17:22:52.0963 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-17 17:22:52.1113 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-17 17:22:52.1702 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-17 17:22:52.1702 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-17 17:22:52.1702 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-17 17:22:52.1702 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-17 17:22:52.2058 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-17 17:22:52.2193 Info Configuration initialized.
+2025-03-17 17:22:53.2660 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-17 17:23:28.3774 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-17 17:23:28.4282 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-17 17:23:28.4939 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-17 17:23:28.4939 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-17 17:23:28.4939 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-17 17:23:28.4998 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-17 17:23:28.5340 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-17 17:23:28.5487 Info Configuration initialized.
+2025-03-17 17:23:31.8011 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-17 17:24:02.9105 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-17 17:24:02.9259 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-17 17:24:02.9851 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-17 17:24:02.9851 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-17 17:24:02.9851 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-17 17:24:02.9851 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-17 17:24:03.0138 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-17 17:24:03.0138 Info Configuration initialized.
+2025-03-17 17:24:04.0016 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-17 17:25:47.3660 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-17 17:25:47.3787 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-17 17:25:47.4292 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-17 17:25:47.4292 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-17 17:25:47.4292 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-17 17:25:47.4292 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-17 17:25:47.4583 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-17 17:25:47.4692 Info Configuration initialized.
+2025-03-17 17:25:48.3311 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-17 17:27:23.3337 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-17 17:27:23.3516 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-17 17:27:23.4698 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-17 17:27:23.4698 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-17 17:27:23.4698 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-17 17:27:23.4698 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-17 17:27:23.5118 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-17 17:27:23.5386 Info Configuration initialized.
+2025-03-17 17:27:26.6718 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-17 17:30:44.8654 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-17 17:30:44.8796 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-17 17:30:44.9507 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-17 17:30:44.9507 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-17 17:30:44.9507 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-17 17:30:44.9507 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-17 17:30:44.9884 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-17 17:30:44.9987 Info Configuration initialized.
+2025-03-17 17:30:46.2204 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-17 17:33:54.6326 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-17 17:33:54.6439 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-17 17:33:54.6992 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-17 17:33:54.6992 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-17 17:33:54.6992 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-17 17:33:54.6992 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-17 17:33:54.7326 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-17 17:33:54.7326 Info Configuration initialized.
+2025-03-17 17:33:55.7406 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-17 17:36:31.2677 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-17 17:36:31.3140 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-17 17:36:31.4022 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-17 17:36:31.4031 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-17 17:36:31.4031 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-17 17:36:31.4031 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-17 17:36:31.4493 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-17 17:36:31.4681 Info Configuration initialized.
+2025-03-17 17:36:34.8267 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-17 21:54:26.5169 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-17 21:54:26.5287 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-17 21:54:26.5934 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-17 21:54:26.5934 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-17 21:54:26.5934 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-17 21:54:26.5996 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-17 21:54:26.6265 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-17 21:54:26.6377 Info Configuration initialized.
+2025-03-17 21:54:27.9082 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-18 07:31:53.1013 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-18 07:31:53.1156 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-18 07:31:53.2142 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-18 07:31:53.2142 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-18 07:31:53.2142 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-18 07:31:53.2222 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-18 07:31:53.2592 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-18 07:31:53.2758 Info Configuration initialized.
+2025-03-18 07:31:56.0941 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-18 08:19:49.3578 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-18 08:19:49.3893 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-18 08:19:49.4404 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-18 08:19:49.4404 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-18 08:19:49.4404 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-18 08:19:49.4404 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-18 08:19:49.4666 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-18 08:19:49.4745 Info Configuration initialized.
+2025-03-18 08:19:51.5418 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-18 08:20:09.9371 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-18 08:20:09.9477 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-18 08:20:09.9892 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-18 08:20:09.9892 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-18 08:20:09.9892 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-18 08:20:09.9892 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-18 08:20:10.0116 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-18 08:20:10.0192 Info Configuration initialized.
+2025-03-18 08:20:11.8686 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-18 08:42:28.9965 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-18 08:42:29.0096 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-18 08:42:29.0666 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-18 08:42:29.0666 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-18 08:42:29.0666 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-18 08:42:29.0721 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-18 08:42:29.0984 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-18 08:42:29.1095 Info Configuration initialized.
+2025-03-18 08:42:30.0483 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-18 09:14:44.4344 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-18 09:14:44.4472 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-18 09:14:44.5068 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-18 09:14:44.5077 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-18 09:14:44.5077 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-18 09:14:44.5077 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-18 09:14:44.5446 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-18 09:14:44.5446 Info Configuration initialized.
+2025-03-18 09:14:46.7541 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-18 10:12:19.9531 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-18 10:12:19.9608 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-18 10:12:20.0146 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-18 10:12:20.0146 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-18 10:12:20.0146 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-18 10:12:20.0190 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-18 10:12:20.0419 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-18 10:12:20.0497 Info Configuration initialized.
+2025-03-18 10:12:22.0986 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-18 10:19:34.9653 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-18 10:19:34.9744 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-18 10:19:35.0237 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-18 10:19:35.0242 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-18 10:19:35.0242 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-18 10:19:35.0242 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-18 10:19:35.0578 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-18 10:19:35.0730 Info Configuration initialized.
+2025-03-18 10:19:35.8785 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-18 11:52:40.4041 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-18 11:52:40.4716 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-18 11:52:40.5456 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-18 11:52:40.5456 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-18 11:52:40.5456 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-18 11:52:40.5456 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-18 11:52:40.5851 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-18 11:52:40.5987 Info Configuration initialized.
+2025-03-18 11:52:43.5165 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-18 11:55:25.4631 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-18 11:55:25.5114 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-18 11:55:25.5957 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-18 11:55:25.5957 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-18 11:55:25.5957 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-18 11:55:25.5957 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-18 11:55:25.6385 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-18 11:55:25.6521 Info Configuration initialized.
+2025-03-18 11:55:28.2432 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-18 12:01:42.5836 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-18 12:01:42.5978 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-18 12:01:42.6635 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-18 12:01:42.6635 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-18 12:01:42.6635 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-18 12:01:42.6635 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-18 12:01:42.6961 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-18 12:01:42.6961 Info Configuration initialized.
+2025-03-18 12:01:43.6238 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-18 12:04:47.3138 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-18 12:04:47.3271 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-18 12:04:47.3794 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-18 12:04:47.3794 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-18 12:04:47.3794 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-18 12:04:47.3862 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-18 12:04:47.4113 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-18 12:04:47.4232 Info Configuration initialized.
+2025-03-18 12:04:48.3311 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-18 13:28:54.6844 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-18 13:28:54.7364 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-18 13:28:54.8235 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-18 13:28:54.8235 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-18 13:28:54.8235 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-18 13:28:54.8235 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-18 13:28:54.8700 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-18 13:28:54.8845 Info Configuration initialized.
+2025-03-18 13:28:57.7691 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-18 13:30:43.1775 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-18 13:30:43.1904 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-18 13:30:43.2472 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-18 13:30:43.2472 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-18 13:30:43.2472 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-18 13:30:43.2531 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-18 13:30:43.2766 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-18 13:30:43.2766 Info Configuration initialized.
+2025-03-18 13:30:44.2526 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-18 13:32:51.5566 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-18 13:32:51.5729 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-18 13:32:51.6322 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-18 13:32:51.6322 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-18 13:32:51.6322 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-18 13:32:51.6375 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-18 13:32:51.6646 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-18 13:32:51.6755 Info Configuration initialized.
+2025-03-18 13:32:52.6904 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-18 13:45:06.3222 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-18 13:45:06.3343 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-18 13:45:06.4038 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-18 13:45:06.4038 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-18 13:45:06.4038 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-18 13:45:06.4116 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-18 13:45:06.4500 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-18 13:45:06.4614 Info Configuration initialized.
+2025-03-18 13:45:07.7474 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-18 13:47:34.7667 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-18 13:47:34.7833 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-18 13:47:34.8677 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-18 13:47:34.8677 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-18 13:47:34.8677 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-18 13:47:34.8775 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-18 13:47:34.9136 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-18 13:47:34.9340 Info Configuration initialized.
+2025-03-18 13:47:37.8368 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-18 13:57:48.6426 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-18 13:57:48.7084 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-18 13:57:48.7644 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-18 13:57:48.7655 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-18 13:57:48.7655 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-18 13:57:48.7655 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-18 13:57:48.7994 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-18 13:57:48.8103 Info Configuration initialized.
+2025-03-18 13:57:51.6811 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-18 13:59:47.9481 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-18 13:59:47.9618 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-18 13:59:48.0226 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-18 13:59:48.0226 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-18 13:59:48.0226 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-18 13:59:48.0301 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-18 13:59:48.0599 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-18 13:59:48.0739 Info Configuration initialized.
+2025-03-18 13:59:49.0344 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-18 14:00:03.6561 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-18 14:00:03.6725 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-18 14:00:03.6960 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-18 14:00:03.6960 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-18 14:00:03.6960 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-18 14:00:03.7031 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-18 14:00:03.7031 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-18 14:00:03.7281 Info Configuration initialized.
+2025-03-18 14:00:04.6374 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-18 14:00:39.6638 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-18 14:00:39.6780 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-18 14:00:39.7071 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-18 14:00:39.7071 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-18 14:00:39.7071 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-18 14:00:39.7071 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-18 14:00:39.7294 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-18 14:00:39.7420 Info Configuration initialized.
+2025-03-18 14:00:40.5533 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-18 14:02:07.0916 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-18 14:02:07.1029 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-18 14:02:07.1298 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-18 14:02:07.1298 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-18 14:02:07.1298 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-18 14:02:07.1298 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-18 14:02:07.1493 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-18 14:02:07.1597 Info Configuration initialized.
+2025-03-18 14:02:08.0948 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-18 14:08:20.5567 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-18 14:08:20.5567 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-18 14:08:20.6286 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-18 14:08:20.6286 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-18 14:08:20.6286 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-18 14:08:20.6286 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-18 14:08:20.6661 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-18 14:08:20.6773 Info Configuration initialized.
+2025-03-18 14:12:15.5672 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-18 14:12:15.5789 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-18 14:12:15.6456 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-18 14:12:15.6456 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-18 14:12:15.6456 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-18 14:12:15.6517 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-18 14:12:15.6800 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-18 14:12:15.6800 Info Configuration initialized.
+2025-03-18 14:12:18.4543 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-18 14:15:08.8133 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-18 14:15:08.8233 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-18 14:15:08.8475 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-18 14:15:08.8475 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-18 14:15:08.8475 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-18 14:15:08.8530 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-18 14:15:08.8530 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-18 14:15:08.8750 Info Configuration initialized.
+2025-03-18 14:15:10.1170 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-18 14:15:51.3848 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-18 14:15:51.3951 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-18 14:15:51.4212 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-18 14:15:51.4330 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-18 14:15:51.4330 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-18 14:15:51.4330 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-18 14:15:51.4498 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-18 14:15:51.4498 Info Configuration initialized.
+2025-03-18 14:15:52.7172 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-18 14:16:05.3308 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-18 14:16:05.3402 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-18 14:16:05.3630 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-18 14:16:05.3630 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-18 14:16:05.3630 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-18 14:16:05.3691 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-18 14:16:05.3691 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-18 14:16:05.3899 Info Configuration initialized.
+2025-03-18 14:16:06.0355 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-18 14:17:59.3700 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-18 14:17:59.3700 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-18 14:17:59.4045 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-18 14:17:59.4045 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-18 14:17:59.4045 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-18 14:17:59.4045 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-18 14:17:59.4208 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-18 14:17:59.4208 Info Configuration initialized.
+2025-03-18 14:18:00.2747 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-18 14:18:12.4423 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-18 14:18:12.4528 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-18 14:18:12.4758 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-18 14:18:12.4758 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-18 14:18:12.4758 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-18 14:18:12.4833 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-18 14:18:12.4963 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-18 14:18:12.4963 Info Configuration initialized.
+2025-03-18 14:18:13.3595 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-18 14:19:58.0352 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-18 14:19:58.1002 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-18 14:19:58.1661 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-18 14:19:58.1661 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-18 14:19:58.1661 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-18 14:19:58.1661 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-18 14:19:58.2018 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-18 14:19:58.2138 Info Configuration initialized.
+2025-03-18 14:20:03.2613 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-18 14:22:52.8291 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-18 14:22:52.8389 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-18 14:22:53.1871 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-18 14:22:53.1871 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-18 14:22:53.1871 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-18 14:22:53.1871 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-18 14:22:53.2180 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-18 14:22:53.2283 Info Configuration initialized.
+2025-03-18 14:22:54.9153 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-18 14:33:52.7624 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-18 14:33:52.7760 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-18 14:33:52.8109 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-18 14:33:52.8109 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-18 14:33:52.8109 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-18 14:33:52.8109 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-18 14:33:52.8376 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-18 14:33:52.8494 Info Configuration initialized.
+2025-03-18 14:33:53.8259 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-18 14:45:24.2246 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-18 14:45:24.2246 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-18 14:45:24.2602 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-18 14:45:24.2602 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-18 14:45:24.2602 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-18 14:45:24.2602 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-18 14:45:24.2788 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-18 14:45:24.2900 Info Configuration initialized.
+2025-03-18 14:45:25.4994 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-18 14:47:10.9439 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-18 14:47:10.9588 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-18 14:47:11.0253 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-18 14:47:11.0253 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-18 14:47:11.0253 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-18 14:47:11.0253 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-18 14:47:11.0599 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-18 14:47:11.0599 Info Configuration initialized.
+2025-03-18 14:47:12.4748 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-18 14:49:30.4773 Info Loading assembly name: CoreLog.Web.AspNetCore
+2025-03-18 14:49:30.5089 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: CoreLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. El sistema no puede encontrar el archivo especificado.
+File name: 'CoreLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2025-03-18 14:49:30.5782 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-18 14:49:30.5782 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-18 14:49:30.5782 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-18 14:49:30.5782 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-18 14:49:30.6285 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
+2025-03-18 14:49:30.6421 Info Configuration initialized.
+2025-03-18 14:49:35.7085 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\05.CoreBusiness\Web.Core.API\bin\Debug\net9.0\nlog.config
