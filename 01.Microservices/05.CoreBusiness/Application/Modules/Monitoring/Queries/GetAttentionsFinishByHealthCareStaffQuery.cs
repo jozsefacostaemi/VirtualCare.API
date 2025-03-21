@@ -1,6 +1,6 @@
 ﻿using Domain.Interfaces.Monitoring;
 using MediatR;
-using Shared;
+using Shared.Common.RequestResult;
 
 namespace Application.Modules.Monitoring.Queries
 {
@@ -13,7 +13,14 @@ namespace Application.Modules.Monitoring.Queries
             _IMonitoringRepository = IMonitoringRepository ?? throw new ArgumentNullException(nameof(IMonitoringRepository));
 
         public async Task<RequestResult> Handle(GetAttentionsFinishByHealthCareStaffQuery query, CancellationToken cancellationToken)
-        => await _IMonitoringRepository.GetAttentionsFinishByHealthCareStaff(null);
+        {
+            var result = await _IMonitoringRepository.GetAttentionsFinishByHealthCareStaff(null);
+            if (result == null)
+                return RequestResult.SuccessResultNoRecords();
+            return RequestResult.SuccessRecord(result);
+        }
+
+      
 
     }
 }

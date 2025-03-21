@@ -1,6 +1,6 @@
 ﻿using Domain.Interfaces.BuildObjects;
 using MediatR;
-using Shared;
+using Shared.Common.RequestResult;
 
 namespace Application.Modules.BuildObjects.Commands;
 public record CreateUsersAuthomatedCommand(int number) : IRequest<RequestResult>;
@@ -14,10 +14,10 @@ public sealed class CreateUsersAuthomatedCommandHandler : IRequestHandler<Create
 
     public async Task<RequestResult> Handle(CreateUsersAuthomatedCommand command, CancellationToken cancellationToken)
     {
-        var result = await _IBuildObjectsRepository.CreateUsers(command.number);
-        if (!result.Success)
-            return RequestResult.ErrorRecord(result.Message);
-        return RequestResult.SuccessUpdate(message: result.Message, data: result.Data);
+        bool result = await _IBuildObjectsRepository.CreateUsers(command.number);
+        if (!result)
+            return RequestResult.ErrorRecord();
+        return RequestResult.SuccessUpdate();
     }
 }
 

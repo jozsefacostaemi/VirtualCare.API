@@ -1,7 +1,7 @@
 ﻿using Domain.Interfaces.Confs;
 using Domain.Interfaces.Queues;
 using MediatR;
-using Shared;
+using Shared.Common.RequestResult;
 
 namespace Application.Modules.Queues.Commands
 {
@@ -16,8 +16,14 @@ namespace Application.Modules.Queues.Commands
             _IConfResetRepository = IConfResetRepository ?? throw new ArgumentNullException(nameof(IConfResetRepository));
         }
 
-        public async Task<RequestResult> Handle(ConfsResetCommand command, CancellationToken cancellationToken) 
-            => await _IConfResetRepository.ResetAttentionsAndPersonStatus();
+        public async Task<RequestResult> Handle(ConfsResetCommand command, CancellationToken cancellationToken)
+        {
+            bool result = await _IConfResetRepository.ResetAttentionsAndPersonStatus();
+            if (!result)
+                return RequestResult.ErrorRecord();
+            return RequestResult.SuccessUpdate();
+        }
+
 
     }
 

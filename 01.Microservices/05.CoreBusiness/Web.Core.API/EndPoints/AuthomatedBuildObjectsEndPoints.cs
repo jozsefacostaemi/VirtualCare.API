@@ -1,7 +1,7 @@
 ﻿using Application.Modules.BuildObjects.Commands;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using Shared;
+using Shared.Common.RequestResult;
 using Web.Core.API.Commons;
 
 namespace Web.Core.API.EndPoints

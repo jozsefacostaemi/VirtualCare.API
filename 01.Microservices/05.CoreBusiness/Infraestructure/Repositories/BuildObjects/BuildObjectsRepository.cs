@@ -1,9 +1,6 @@
 ﻿using Domain.Entities;
-using Domain.Enums;
 using Domain.Interfaces.BuildObjects;
-using Domain.Interfaces.MedicalRecords;
 using Microsoft.EntityFrameworkCore;
-using Shared;
 
 namespace Infraestructure.Repositories.BuildObjects;
 
@@ -12,7 +9,7 @@ internal class BuildObjectsRepository : IBuildObjectsRepository
     private readonly ApplicationDbContext _context;
     public BuildObjectsRepository(ApplicationDbContext context) => _context = context;
     /* Función que crea pacientes masivamente */
-    public async Task<RequestResult> CreatePatients(int number)
+    public async Task<bool> CreatePatients(int number)
     {
         var cities = await _context.Cities.ToListAsync();
         for (int i = 0; i < number; i++)
@@ -49,10 +46,10 @@ internal class BuildObjectsRepository : IBuildObjectsRepository
             await _context.SaveChangesAsync();
 
         }
-        return RequestResult.SuccessRecord();
+        return true;
     }
     /* Función que crea usuarios masivamente */
-    public async Task<RequestResult> CreateUsers(int number)
+    public async Task<bool> CreateUsers(int number)
     {
         var cities = await _context.Cities.ToListAsync();
         var services = await _context.Services.ToListAsync();
@@ -101,7 +98,7 @@ internal class BuildObjectsRepository : IBuildObjectsRepository
             await _context.AddAsync(objUserService);
             await _context.SaveChangesAsync();
         }
-        return RequestResult.SuccessRecord();
+        return true;
 
 
     }

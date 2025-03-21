@@ -3,10 +3,10 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Shared;
 using Auth.VirtualCare.API.Common;
 using Application.Modules.Auth.Commands;
 using MediatR;
+using Shared.Common.RequestResult;
 
 public class AuthomatedAuthEndpoints : IEndpoints
 {

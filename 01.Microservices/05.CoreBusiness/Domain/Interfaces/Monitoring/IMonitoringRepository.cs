@@ -1,19 +1,19 @@
 ﻿using System;
-using Shared;
+using Shared.Common.RequestResult;
 
 namespace Domain.Interfaces.Monitoring
 {
     public interface IMonitoringRepository
     {
-        Task<RequestResult> GetUsageCPU();
-        Task<RequestResult> GetQuantityByState(Guid? BusinessLineId);
-        Task<RequestResult> GetAttentionsFinishByHealthCareStaff(Guid? BusinessLineId);
-        Task<RequestResult> GetLogguedHealthCareStaff(Guid? BusinessLineId);
-        Task<RequestResult> GetAttentionsByTimeLine(Guid? BusinessLineId);
-        Task<RequestResult> GetPercentAttentionsFinish(Guid? BusinessLineId);
-        Task<RequestResult> GetNumberAttentionsByCity(Guid? BusinessLineId);
-        Task<RequestResult> GetQueuesActive(Guid? BusinessLineId);
-        Task<RequestResult> GetNumberActive(Guid? BusinessLineId);
+        Task<dynamic> GetUsageCPU();
+        Task<dynamic> GetQuantityByState(Guid? BusinessLineId);
+        Task<dynamic> GetAttentionsFinishByHealthCareStaff(Guid? BusinessLineId);
+        Task<dynamic> GetLogguedHealthCareStaff(Guid? BusinessLineId);
+        Task<dynamic?> GetAttentionsByTimeLine(Guid? BusinessLineId);
+        Task<dynamic> GetPercentAttentionsFinish(Guid? BusinessLineId);
+        Task<dynamic?> GetNumberAttentionsByCity(Guid? BusinessLineId);
+        Task<dynamic?> GetQueuesActive(Guid? BusinessLineId);
+        Task<dynamic?> GetNumberActive(Guid? BusinessLineId);
 
     }
 }

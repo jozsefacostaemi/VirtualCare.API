@@ -1,6 +1,6 @@
 ﻿using Domain.Interfaces.Queues;
 using MediatR;
-using Shared;
+using Shared.Common.RequestResult;
 
 namespace Application.Modules.Queues.Commands
 {

@@ -1,8 +1,9 @@
 ﻿using Domain.Interfaces.AuthomatedProcesses;
 using MediatR;
-using Shared;
+using Shared.Common.RequestResult;
+using SharedClasses._02.Core.Responses;
 
-namespace Application.Modules.MedicalRecords.Commands;
+namespace Application.Modules.AuthomatedProcesses.Commands;
 public record CancelAttentionAuthomaticCommand(int number) : IRequest<RequestResult>;
 
 public sealed class CancelAttentionAuthomaticCommandHandler : IRequestHandler<CancelAttentionAuthomaticCommand, RequestResult>
@@ -14,10 +15,10 @@ public sealed class CancelAttentionAuthomaticCommandHandler : IRequestHandler<Ca
 
     public async Task<RequestResult> Handle(CancelAttentionAuthomaticCommand command, CancellationToken cancellationToken)
     {
-        var result = await _iauthomatedProcessesRepository.ProcessAttentions(5, command.number);
+        ResultAuthomaticProcessAttentionDTO result = await _iauthomatedProcessesRepository.ProcessAttentions(5, command.number);
         if (!result.Success)
             return RequestResult.ErrorRecord(result.Message);
-        return RequestResult.SuccessUpdate(message: result.Message, data: result.Data);
+        return RequestResult.SuccessUpdate(message: result.Message, data: result.LstResultProcessAttentionsDTO);
     }
 }
 

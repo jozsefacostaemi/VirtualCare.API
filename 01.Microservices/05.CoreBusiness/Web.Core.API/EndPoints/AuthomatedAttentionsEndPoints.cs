@@ -1,7 +1,7 @@
-﻿using Application.Modules.MedicalRecords.Commands;
+﻿using Application.Modules.AuthomatedProcesses.Commands;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using Shared;
+using Shared.Common.RequestResult;
 using Web.Core.API.Commons;
 
 namespace Web.Core.API.EndPoints

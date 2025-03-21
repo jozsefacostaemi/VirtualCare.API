@@ -1,18 +1,15 @@
-﻿using Application.Modules.MedicalRecord.Responses;
-using AutoMapper;
+﻿using AutoMapper;
 using Domain.Entities;
+using SharedClasses._02.Core.Responses;
 
-namespace Application.Mappings
+public class MedicalRecordMappingProfile : Profile
 {
-    public class MedicalRecordMappingProfile : Profile
+    public MedicalRecordMappingProfile()
     {
-        public MedicalRecordMappingProfile()
-        {
-            CreateMap<MedicalRecord, MedicalRecordResponsesDTO>()
-                .ConstructUsing(src => new MedicalRecordResponsesDTO(
-                    src.Id,
-                    src.PatientId
+        CreateMap<MedicalRecord, MedicalRecordResponsesDTO>()
+            .ConstructUsing(src => new MedicalRecordResponsesDTO(
+                src.Id,
+                src.PatientId
             ));
-        }
     }
 }

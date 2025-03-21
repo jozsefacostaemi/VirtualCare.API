@@ -1,6 +1,6 @@
 ﻿using Domain.Interfaces.Messages;
-using Domain.Resources;
 using Microsoft.Extensions.Localization;
+using Web.Core.Domain.Resources;
 
 namespace Domain.Services
 {

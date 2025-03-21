@@ -1,6 +1,6 @@
 ﻿using Domain.Interfaces.BuildObjects;
 using MediatR;
-using Shared;
+using Shared.Common.RequestResult;
 
 namespace Application.Modules.BuildObjects.Commands;
 public record CreatePatientsAuthomatedCommand(int number) : IRequest<RequestResult>;
@@ -14,10 +14,10 @@ public sealed class CreatePatientsAuthomatedCommandHandler : IRequestHandler<Cre
 
     public async Task<RequestResult> Handle(CreatePatientsAuthomatedCommand command, CancellationToken cancellationToken)
     {
-        var result = await _IBuildObjectsRepository.CreatePatients(command.number);
-        if (!result.Success)
-            return RequestResult.ErrorRecord(result.Message);
-        return RequestResult.SuccessUpdate(message: result.Message, data: result.Data);
+        bool result = await _IBuildObjectsRepository.CreatePatients(command.number);
+        if (!result)
+            return RequestResult.ErrorRecord();
+        return RequestResult.SuccessUpdate();
     }
 }
 

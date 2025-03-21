@@ -1,6 +1,6 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using Shared;
+using Shared.Common.RequestResult;
 using System.Net;
 using System.Text;
 using System.Text.Json;
@@ -32,10 +32,14 @@ namespace Web.Core.API.Middlewares.GlobalExceptions
                 var problemDetails = await BuildProblemDetailsAsync(ex, requestBody, routeParams, queryParams);
                 var response = BuildErrorResponse(commandName, problemDetails, $"Error: {commandName}");
                 _logger.LogError(ex, "An error occurred while processing the request: {Response}", JsonSerializer.Serialize(response));
-                context.Response.StatusCode = (int)HttpStatusCode.OK;
-                context.Response.ContentType = "application/json";
-                await context.Response.WriteAsync(JsonSerializer.Serialize(response));
-                await sendMessageBrokers(response);
+
+                if (!context.WebSockets.IsWebSocketRequest)
+                {
+                    context.Response.StatusCode = (int)HttpStatusCode.OK;
+                    context.Response.ContentType = "application/json";
+                    await context.Response.WriteAsync(JsonSerializer.Serialize(response));
+                }
+                //await sendMessageBrokers(response);
             }
         }
 

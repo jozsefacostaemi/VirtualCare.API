@@ -1,6 +1,6 @@
 ﻿using Domain.Interfaces.Monitoring;
 using MediatR;
-using Shared;
+using Shared.Common.RequestResult;
 
 namespace Application.Modules.Monitoring.Queries
 {
@@ -11,7 +11,12 @@ namespace Application.Modules.Monitoring.Queries
         public GetUsageCPUQueryHandle(IMonitoringRepository IMonitoringRepository) =>
             _IMonitoringRepository = IMonitoringRepository ?? throw new ArgumentNullException(nameof(IMonitoringRepository));
         public async Task<RequestResult> Handle(GetUsageCPUQuery query, CancellationToken cancellationToken)
-        => await _IMonitoringRepository.GetUsageCPU();
+        {
+            var result = await _IMonitoringRepository.GetUsageCPU();
+            if (result == null)
+                return RequestResult.SuccessResultNoRecords();
+            return RequestResult.SuccessRecord(result);
+        }
     }
 }
 

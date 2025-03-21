@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Shared;
+﻿using SharedClasses._02.Core.Responses;
 
 namespace Domain.Interfaces.AuthomatedProcesses
 {
     public interface IAuthomatedProcessesRepository
     {
-        Task<RequestResult> ProcessAttentions(int option, int number);
+        Task<ResultAuthomaticProcessAttentionDTO> ProcessAttentions(int option, int number);
     }
 }

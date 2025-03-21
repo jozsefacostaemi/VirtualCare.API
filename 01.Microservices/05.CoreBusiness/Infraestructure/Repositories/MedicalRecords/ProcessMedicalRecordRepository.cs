@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
 using Queues.Functions.Models;
-using Shared;
 using StateMachines;
+using SharedClasses._02.Core.DTOs;
 
 namespace Infraestructure.Repositories.MedicalRecords;
 
@@ -42,50 +42,49 @@ public class ProcessMedicalRecordRepository : IProcessMedicalRecordRepository
 
     #region Public Methods
     /* Función que dispara mensaje en cola Pendiente según el proceso seleccionado */
-    public async Task<RequestResult> CreateAttention(string ProcessCode, Guid PatientId)
+    public async Task<ResultProcessAttentionDTO> CreateAttention(string ProcessCode, Guid PatientId)
     {
         (bool sucessMachineState, string messageMachineState, EntityEventStateMachine entityMachineState) = await GetMachineStates(PatientId, null, null, StateEventProcessEnum.CREATED);
-        if (!sucessMachineState) return RequestResult.ErrorResult(messageMachineState);
+        if (!sucessMachineState) return new ResultProcessAttentionDTO(false, messageMachineState);
         dynamic? Patient = await GetInfoPatient(PatientId);
-        if (Patient == null) return RequestResult.ErrorResult(message: _IMessageService.GetThePatientDoesNotExist());
+        if (Patient == null) return new ResultProcessAttentionDTO(false, _IMessageService.GetThePatientDoesNotExist());
         Service? Service = await GetService(ProcessCode);
-        if (Service == null) return RequestResult.ErrorResult(message: _IMessageService.GetTheCodeServiceDoesNotExist());
+        if (Service == null) return new ResultProcessAttentionDTO(false, _IMessageService.GetTheCodeServiceDoesNotExist());
         (bool SucessGetQueueNameConfig, string ResultGetQueueName, Guid QueueConfId) = await GetQueueNameConfig(ProcessCode, new { Patient.LevelQueueCode, Patient.CountryId, Patient.DepartmentId, Patient.CityId });
-        if (!SucessGetQueueNameConfig) return RequestResult.ErrorResult(message: ResultGetQueueName);
+        if (!SucessGetQueueNameConfig) return new ResultProcessAttentionDTO(false, ResultGetQueueName);
         int Priority = GetPriority((DateTime)Patient.Birthday, Patient.Comorbidities, Patient.PlanCodeNumber);
         var (sucessProcessEmitAttention, resultProcessEmitAttention, NewAttention) = await TriggerEmitAttention(entityMachineState.NewMedicalRecordStateId, PatientId, entityMachineState.NewPatientStateId, QueueConfId, ResultGetQueueName, Priority, Service.Id);
-        if (!sucessProcessEmitAttention) return RequestResult.ErrorRecord(message: resultProcessEmitAttention);
+        if (!sucessProcessEmitAttention) return new ResultProcessAttentionDTO(false, resultProcessEmitAttention);
         var GetUserAvailable = await _IUserRepository.SearchFirstUserAvailable(ProcessCode);
         if (GetUserAvailable?.Data != null)
             return await AssignAttention((Guid)GetUserAvailable.Data);
-        var GetAttention = await GetAttentionByIdAsNoTracking(NewAttention);
-        return RequestResult.SuccessRecord(message: _IMessageService.GetSuccessCreation(), data: GetAttention);
+        AttentionDTO? AttentionDTO = await GetAttentionByIdAsNoTracking(NewAttention);
+        return new ResultProcessAttentionDTO(true, _IMessageService.GetSuccessCreation(), AttentionDTO);
     }
     /* Función que dispara mensaje en cola Asignado según el proceso seleccionado */
-    public async Task<RequestResult> AssignAttention(Guid UserId)
+    public async Task<ResultProcessAttentionDTO> AssignAttention(Guid UserId)
     {
         (bool sucessMachineState, string messageMachineState, EntityEventStateMachine entityEventStateMachine) = await GetMachineStates(null, UserId, null, StateEventProcessEnum.ASSIGNED);
-        if (!sucessMachineState) return RequestResult.ErrorResult(messageMachineState);
+        if (!sucessMachineState)
+            return new ResultProcessAttentionDTO(false, messageMachineState);
         User? User = await GetUserById(UserId);
         if (User == null)
-            return RequestResult.ErrorResult(_IMessageService.GetTheUserDoesNotExist());
+            return new ResultProcessAttentionDTO(false, _IMessageService.GetTheUserDoesNotExist());
         string? ProcessCode = User.UserServices.Where(x => x.ServicePriority).FirstOrDefault()?.Service.Code;
-        if (string.IsNullOrEmpty(ProcessCode)) return RequestResult.ErrorResult(_IMessageService.GetTheUserDoesNotRelatedPriorityService());
+        if (string.IsNullOrEmpty(ProcessCode)) return new ResultProcessAttentionDTO(false, _IMessageService.GetTheUserDoesNotRelatedPriorityService());
         (bool SucessGetQueueNameConfig, string ResultGetQueueName, Guid QueueConfId) = await GetQueueNameConfig(ProcessCode, new { LevelQueueCode = User.BusinessLine.LevelQueue.Code, User.City.Department.CountryId, User.City.DepartmentId, User.CityId });
-        if (!SucessGetQueueNameConfig)
-            return RequestResult.ErrorResult(ResultGetQueueName);
+        if (!SucessGetQueueNameConfig) return new ResultProcessAttentionDTO(false, ResultGetQueueName);
         var (SucessConsumeMessage, ResultConsumeMessage, AttentionId) = await ConsumeMessage(ResultGetQueueName, User.Id, entityEventStateMachine);
-        if (!SucessConsumeMessage)
-            return RequestResult.ErrorResult(ResultConsumeMessage);
-        var Attention = await GetAttentionByIdAsNoTracking(AttentionId);
-        return RequestResult.SuccessRecord(message: _IMessageService.GetSuccessAssignation(), data: Attention);
+        if (!SucessConsumeMessage) return new ResultProcessAttentionDTO(false, ResultConsumeMessage);
+        AttentionDTO? AttentionDTO = await GetAttentionByIdAsNoTracking(AttentionId);
+        return new ResultProcessAttentionDTO (true, _IMessageService.GetSuccessAssignation(), AttentionDTO);
     }
     /* Función que dispara mensaje en cola En Proceso según el proceso seleccionado */
-    public async Task<RequestResult> StartAttention(Guid AttentionId) => await ProcessAttention(AttentionId, StateEventProcessEnum.INPROCESS);
+    public async Task<ResultProcessAttentionDTO> StartAttention(Guid AttentionId) => await ProcessAttention(AttentionId, StateEventProcessEnum.INPROCESS);
     /* Función que dispara mensaje en cola Finalizado según el proceso seleccionado */
-    public async Task<RequestResult> FinishAttention(Guid AttentionId) => await ProcessAttention(AttentionId, StateEventProcessEnum.FINALIZED);
+    public async Task<ResultProcessAttentionDTO> FinishAttention(Guid AttentionId) => await ProcessAttention(AttentionId, StateEventProcessEnum.FINALIZED);
     /* Función que cancela la atención */
-    public async Task<RequestResult> CancelAttention(Guid AttentionId) => await ProcessAttention(AttentionId, StateEventProcessEnum.CANCELLED);
+    public async Task<ResultProcessAttentionDTO> CancelAttention(Guid AttentionId) => await ProcessAttention(AttentionId, StateEventProcessEnum.CANCELLED);
     /* Función que consulta parametrización a nivel de procesos, ciudad, departamento, pais y linea de negocio*/
     public async Task<(bool, string, Guid)> GetQueueNameConfig(string? ProcessCode, dynamic? ObjUser)
     {
@@ -257,7 +256,7 @@ public class ProcessMedicalRecordRepository : IProcessMedicalRecordRepository
         }
     }
     /* Función que permita armar el objeto AttentionHistory */
-    private async Task AddAttentionHistory(Guid attentionId, Guid? AttentionStateId) => await _context.MedicalRecordHistories.AddAsync(new MedicalRecordHistory { Id = Guid.NewGuid(), MedicalRecordId = attentionId, MedicalRecordStateId = AttentionStateId?? Guid.Empty, CreatedAt = DateTime.Now });
+    private async Task AddAttentionHistory(Guid attentionId, Guid? AttentionStateId) => await _context.MedicalRecordHistories.AddAsync(new MedicalRecordHistory { Id = Guid.NewGuid(), MedicalRecordId = attentionId, MedicalRecordStateId = AttentionStateId ?? Guid.Empty, CreatedAt = DateTime.Now });
     /* Función que guarda mensaje de error */
     private async Task LogErrorAsync(string reason, Exception? ex = null, string? message = null)
     {
@@ -348,54 +347,58 @@ public class ProcessMedicalRecordRepository : IProcessMedicalRecordRepository
     /* Función que consulta la atención por Id */
     private async Task<MedicalRecord?> GetAttentionById(Guid AttentionId) => await _context.MedicalRecords.FindAsync(AttentionId);
     /* Función que consulta la atención por Id */
-    private async Task<dynamic?> GetAttentionByIdAsNoTracking(Guid? AttentionId) => await _context.MedicalRecords.AsNoTracking().Include(x => x.User).Where(x => x.Id.Equals(AttentionId))
-        .Select(x =>
-        new
-        {
-            AttentionId = x.Id,
-            x.Priority,
-            User = x.User != null ? x.User.Name : "N/A",
-            Patient = x.Patient != null ? x.Patient.FirstName : "N/A",
-            Process = x.Service != null ? x.Service.Name : string.Empty,
-            City = x.Patient != null && x.Patient.City != null ? x.Patient.City.Name : string.Empty,
-            PatientNum = x.Patient != null ? x.Patient.Identification : string.Empty,
-            Comorbidities = x.Patient != null ? x.Patient.Comorbidities : 0,
-            Age = x.Patient != null && x.Patient.Birthday != null ? CalculatedAge.YearsMonthsDays(Convert.ToDateTime(x.Patient.Birthday)) : string.Empty,
-            State = x.MedicalRecordState != null ? x.MedicalRecordState.Name : string.Empty,
-            Plan = x.Patient != null && x.Patient.Plan != null ? x.Patient.Plan.Name : "N/A",
-            StartDate = x.CreatedAt.HasValue ? x.CreatedAt.Value.ToString("yyyy-MM-dd HH:mm:ss") : string.Empty,
-            EndDate = x.EndDate.HasValue ? x.EndDate.Value.ToString("yyyy-MM-dd HH:mm:ss") : string.Empty,
-            PatientId = x.Patient != null ? x.Patient.Id : Guid.Empty,
-            UserId = x.User != null ? x.User.Id : Guid.Empty,
-            CityId = x.User != null ? x.User.CityId : Guid.Empty,
-            DepartmentId = x.User != null && x.User.City != null ? x.User.City.DepartmentId : Guid.Empty,
-            CountryId = x.User != null && x.User.City != null ? x.User.City.Department.CountryId : Guid.Empty,
-            ProcessId = x.User != null && x.User.UserServices.Any(s => s.ServicePriority) ? 
-                x.User.UserServices.First(x=>x.ServicePriority == true).ServiceId: Guid.Empty,
-            x.MedicalRecordStateId,
-            processCode = x.User != null && x.User.UserServices.Any(x => x.ServicePriority) ?
-                  x.User.UserServices.First(x => x.ServicePriority == true).Service.Code : string.Empty, 
-
-        }).SingleOrDefaultAsync();
+    private async Task<AttentionDTO?> GetAttentionByIdAsNoTracking(Guid? AttentionId)
+    {
+        return await _context.MedicalRecords.AsNoTracking()
+            .Include(x => x.User)
+            .Where(x => x.Id.Equals(AttentionId))
+            .Select(x => new AttentionDTO
+            {
+                AttentionId = x.Id,
+                Priority = x.Priority,
+                User = x.User != null ? x.User.Name : "N/A",
+                Patient = x.Patient != null ? x.Patient.FirstName : "N/A",
+                Process = x.Service != null ? x.Service.Name : string.Empty,
+                City = x.Patient != null && x.Patient.City != null ? x.Patient.City.Name : string.Empty,
+                PatientNum = x.Patient != null ? x.Patient.Identification : string.Empty,
+                Comorbidities = x.Patient != null ? x.Patient.Comorbidities : 0,
+                Age = x.Patient != null && x.Patient.Birthday != null ? CalculatedAge.YearsMonthsDays(Convert.ToDateTime(x.Patient.Birthday)) : string.Empty,
+                State = x.MedicalRecordState != null ? x.MedicalRecordState.Name : string.Empty,
+                Plan = x.Patient != null && x.Patient.Plan != null ? x.Patient.Plan.Name : "N/A",
+                StartDate = x.CreatedAt.HasValue ? x.CreatedAt.Value.ToString("yyyy-MM-dd HH:mm:ss") : string.Empty,
+                EndDate = x.EndDate.HasValue ? x.EndDate.Value.ToString("yyyy-MM-dd HH:mm:ss") : string.Empty,
+                PatientId = x.Patient != null ? x.Patient.Id : Guid.Empty,
+                UserId = x.User != null ? x.User.Id : null,
+                CityId = x.User != null ? x.User.CityId : null,
+                DepartmentId = x.User != null && x.User.City != null ? x.User.City.DepartmentId : null,
+                CountryId = x.User != null && x.User.City != null ? x.User.City.Department.CountryId : null,
+                ProcessId = x.User != null && x.User.UserServices.Any(s => s.ServicePriority) ?
+                    x.User.UserServices.First(x => x.ServicePriority == true).ServiceId : null,
+                MedicalRecordStateId = x.MedicalRecordStateId,
+                ProcessCode = x.User != null && x.User.UserServices.Any(x => x.ServicePriority) ?
+                    x.User.UserServices.First(x => x.ServicePriority == true).Service.Code : string.Empty
+            })
+            .SingleOrDefaultAsync();
+    }
     /* Función que realiza proceso de proceso genericos */
-    private async Task<RequestResult> ProcessAttention(Guid AttentionId, StateEventProcessEnum EventProcess)
+    private async Task<ResultProcessAttentionDTO> ProcessAttention(Guid AttentionId, StateEventProcessEnum EventProcess)
     {
         MedicalRecord? MedicalRecord = await GetAttentionById(AttentionId);
-        if (MedicalRecord == null) return RequestResult.ErrorResult(_IMessageService.GetTheMedicalRecordDoesNotExist());
+        if (MedicalRecord == null) return new ResultProcessAttentionDTO(false, _IMessageService.GetTheMedicalRecordDoesNotExist());
 
         (bool sucessMachineState, string messageMachineState, EntityEventStateMachine entityMachineState) = await GetMachineStates(MedicalRecord.PatientId, MedicalRecord.UserId, MedicalRecord.Id, EventProcess);
-        if (!sucessMachineState) return RequestResult.ErrorResult(messageMachineState);
-
+        if (!sucessMachineState) return new ResultProcessAttentionDTO(false, _IMessageService.GetTheMedicalRecordDoesNotExist());
 
         User? User = await GetUserById(MedicalRecord.UserId);
-        if (User == null) return RequestResult.ErrorResult(_IMessageService.GetTheUserDoesNotExist());
+        if (User == null) return new ResultProcessAttentionDTO(false, _IMessageService.GetTheUserDoesNotExist());
 
         var (SucessTriggerProcessAttention, ResultTriggerProcessAttention) = await TriggerProcessAttention(MedicalRecord.PatientId, entityMachineState.NewPatientStateId, entityMachineState.NewMedicalRecordStateId, User.Id, (Guid)entityMachineState.NewUserStateId, AttentionId, EventProcess == StateEventProcessEnum.FINALIZED || EventProcess == StateEventProcessEnum.CANCELLED ? true : false);
         if (!SucessTriggerProcessAttention)
-            return RequestResult.ErrorRecord(message: ResultTriggerProcessAttention);
+            return new ResultProcessAttentionDTO(false, ResultTriggerProcessAttention);
 
         string? ProcessCode = User.UserServices.Where(x => x.ServicePriority).FirstOrDefault()?.Service.Code;
-        if (string.IsNullOrEmpty(ProcessCode)) return RequestResult.ErrorResult(_IMessageService.GetTheUserDoesNotRelatedPriorityService());
+        if (string.IsNullOrEmpty(ProcessCode))
+            return new ResultProcessAttentionDTO(false, _IMessageService.GetTheUserDoesNotRelatedPriorityService());
 
         /* Si hay médico disponible, asignamos la cita automaticamente */
         if (EventProcess == StateEventProcessEnum.FINALIZED || EventProcess == StateEventProcessEnum.CANCELLED)
@@ -407,9 +410,9 @@ public class ProcessMedicalRecordRepository : IProcessMedicalRecordRepository
                 if (resultAssigned.Success) return resultAssigned;
             }
         }
-        var resultAttention = await GetAttentionByIdAsNoTracking(AttentionId);
-        string processResult = GetProcessResult(EventProcess, AttentionId.ToString(), resultAttention);
-        return RequestResult.SuccessRecord(data: resultAttention, message: processResult);
+        AttentionDTO? resultAttention = await GetAttentionByIdAsNoTracking(AttentionId);
+        string processResult = GetProcessResult(EventProcess, AttentionId.ToString());
+        return new ResultProcessAttentionDTO(true, processResult, resultAttention);
     }
     /* Función que calcula la prioridad del mensaje con base a la edad del paciente, comorbilidades y plan relacionado */
     private int? GetPriority(DateTime birthDate, int? comorbidities, int planRecord)
@@ -427,7 +430,7 @@ public class ProcessMedicalRecordRepository : IProcessMedicalRecordRepository
         return priority;
     }
     /* Función que devuelve resultado string y emite evento de SignalR */
-    private string GetProcessResult(StateEventProcessEnum StateEventProcessEnum, string AttentionId, dynamic resultAttention)
+    private string GetProcessResult(StateEventProcessEnum StateEventProcessEnum, string AttentionId)
     {
         switch (StateEventProcessEnum)
         {

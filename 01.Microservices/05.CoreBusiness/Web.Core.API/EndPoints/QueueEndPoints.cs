@@ -1,6 +1,6 @@
 ﻿using Application.Modules.Queues.Commands;
 using MediatR;
-using Shared;
+using Shared.Common.RequestResult;
 using Web.Core.API.Commons;
 
 namespace Web.Core.API.EndPoints

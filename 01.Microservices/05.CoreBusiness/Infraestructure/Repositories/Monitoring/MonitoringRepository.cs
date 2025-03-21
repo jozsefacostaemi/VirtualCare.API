@@ -3,7 +3,7 @@ using Domain.Enums;
 using Domain.Interfaces.Monitoring;
 using Infraestructure.Helpers;
 using Microsoft.EntityFrameworkCore;
-using Shared;
+using Shared.Common.RequestResult;
 
 namespace Infraestructure.Repositories.Monitoring
 {
@@ -13,7 +13,7 @@ namespace Infraestructure.Repositories.Monitoring
         public MonitoringRepository(ApplicationDbContext context) => _context = context;
 
         /* Función que valida las credenciales del personal asistencial */
-        public async Task<RequestResult> GetQuantityByState(Guid? BusinessLineId)
+        public async Task<dynamic> GetQuantityByState(Guid? BusinessLineId)
         {
             Guid BusinessLine = BusinessLineId.HasValue ? BusinessLineId.Value : Guid.Parse("DD44C571-4FA5-4133-AECD-062834C93601");
 
@@ -74,20 +74,20 @@ namespace Infraestructure.Repositories.Monitoring
                 Data = group.Value
             }).ToList();
 
-            return RequestResult.SuccessResult(finalResult);
+            return (finalResult);
         }
 
         /* Función que obtiene información de la CPU */
-        public async Task<RequestResult> GetUsageCPU()
+        public async Task<dynamic> GetUsageCPU()
         {
             var cpuCounter = new PerformanceCounter("Processor", "% Processor Time", "_Total");
             cpuCounter.NextValue();
             System.Threading.Thread.Sleep(1000);
             float cpuUsage = cpuCounter.NextValue();
-            return RequestResult.SuccessResult(cpuUsage);
+            return (cpuUsage);
         }
         /* Función que consulta la información de doctores agrupados por atenciones */
-        public async Task<RequestResult> GetAttentionsFinishByHealthCareStaff(Guid? BusinessLineId)
+        public async Task<dynamic> GetAttentionsFinishByHealthCareStaff(Guid? BusinessLineId)
         {
             var attentionsFinishByHealthCareStaff = await _context.MedicalRecords
                 .Where(x => x.User != null && !string.IsNullOrEmpty(x.MedicalRecordState.Code))
@@ -110,7 +110,7 @@ namespace Infraestructure.Repositories.Monitoring
             }));
         }
         /* Función que consulta la información de doctores logueados por atenciones OK */
-        public async Task<RequestResult> GetLogguedHealthCareStaff(Guid? BusinessLineId)
+        public async Task<dynamic> GetLogguedHealthCareStaff(Guid? BusinessLineId)
         {
             var groupedUsers = await _context.Users
                 .GroupBy(u => u.Loggued)
@@ -142,11 +142,11 @@ namespace Infraestructure.Repositories.Monitoring
                 Background = colorPairNoLoggued.backgroundColor,
                 Border = colorPairNoLoggued.borderColor
             });
-            return RequestResult.SuccessResult(lstUsers);
+            return (lstUsers);
         }
 
         /* Función que consulta los datos de de números de atenciones en el tiempo */
-        public async Task<RequestResult> GetAttentionsByTimeLine(Guid? BusinessLineId)
+        public async Task<dynamic?> GetAttentionsByTimeLine(Guid? BusinessLineId)
         {
             var result = await _context.MedicalRecords
                 .Where(a => a.CreatedAt >= DateTime.Now.AddDays(-10))
@@ -160,7 +160,7 @@ namespace Infraestructure.Repositories.Monitoring
                 .ThenBy(x => x.Date.Month)
                 .ThenBy(x => x.Date.Day)
                 .ToListAsync();
-            return RequestResult.SuccessResult(result?.Select(x =>
+            return result?.Select(x =>
             {
                 var colorPair = GetColor.GetRandomColorPair();
                 return new
@@ -170,11 +170,11 @@ namespace Infraestructure.Repositories.Monitoring
                     Background = colorPair.backgroundColor,
                     Border = colorPair.borderColor
                 };
-            }));
+            });
         }
 
         /* Función que consulta los datos de las atenciones finalizadas */
-        public async Task<RequestResult> GetPercentAttentionsFinish(Guid? BusinessLineId)
+        public async Task<dynamic> GetPercentAttentionsFinish(Guid? BusinessLineId)
         {
             var resultado = await _context.MedicalRecords
                 .GroupBy(a => a.MedicalRecordState.Code)
@@ -251,12 +251,12 @@ namespace Infraestructure.Repositories.Monitoring
                 Background = colorPairFive.backgroundColor,
                 Border = colorPairFive.borderColor
             });
-            return RequestResult.SuccessResult(lstAttentionTypes);
+            return (lstAttentionTypes);
 
         }
 
         /* Función que consulta los datos de ciudades por paciente : OK */
-        public async Task<RequestResult> GetNumberAttentionsByCity(Guid? BusinessLineId)
+        public async Task<dynamic?> GetNumberAttentionsByCity(Guid? BusinessLineId)
         {
             var resultByCity = await _context.MedicalRecords
                 .GroupBy(a => a.Patient.City.Name)
@@ -266,7 +266,7 @@ namespace Infraestructure.Repositories.Monitoring
                     Count = g.Count()
                 })
                 .ToListAsync();
-            return RequestResult.SuccessResult(resultByCity?.Select(x =>
+            return resultByCity?.Select(x =>
             {
                 var colorPair = GetColor.GetRandomColorPair();
                 return new
@@ -276,11 +276,11 @@ namespace Infraestructure.Repositories.Monitoring
                     Background = colorPair.backgroundColor,
                     Border = colorPair.borderColor
                 };
-            }));
+            });
         }
 
         /* Función que consulta las colas activas */
-        public async Task<RequestResult> GetQueuesActive(Guid? businessLineId)
+        public async Task<dynamic?> GetQueuesActive(Guid? businessLineId)
         {
             businessLineId = businessLineId == null || businessLineId == Guid.Empty ? Guid.Parse("DD44C571-4FA5-4133-AECD-062834C93601") : businessLineId;
 
@@ -290,7 +290,7 @@ namespace Infraestructure.Repositories.Monitoring
 
             if (confQueues != null)
             {
-                return RequestResult.SuccessResult(confQueues?.Select(x =>
+                return (confQueues?.Select(x =>
                 {
                     var colorPair = GetColor.GetRandomColorPair();
                     return new
@@ -307,7 +307,7 @@ namespace Infraestructure.Repositories.Monitoring
         }
 
         /* Función que indica el numero de colas activas */
-        public async Task<RequestResult> GetNumberActive(Guid? businessLineId)
+        public async Task<dynamic?> GetNumberActive(Guid? businessLineId)
         {
             businessLineId = businessLineId == null || businessLineId == Guid.Empty ? Guid.Parse("DD44C571-4FA5-4133-AECD-062834C93601") : businessLineId;
 
@@ -327,9 +327,9 @@ namespace Infraestructure.Repositories.Monitoring
                     Background = colorPair.backgroundColor,
                     Border = colorPair.borderColor
                 });
-                return RequestResult.SuccessResult(lstUsers);
+                return (lstUsers);
             }
-            return RequestResult.SuccessResultNoRecords();
+            return null;
         }
     }
 }

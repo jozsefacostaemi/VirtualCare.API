@@ -1,7 +1,7 @@
 ﻿using FluentValidation;
 using MediatR;
 using Microsoft.Extensions.Logging;
-using Shared;
+using Shared.Common.RequestResult;
 using System.Globalization;
 using System.Text.Json;
 

@@ -1,8 +1,9 @@
 ﻿using Domain.Interfaces.AuthomatedProcesses;
 using MediatR;
-using Shared;
+using Shared.Common.RequestResult;
+using SharedClasses._02.Core.Responses;
 
-namespace Application.Modules.MedicalRecords.Commands;
+namespace Application.Modules.AuthomatedProcesses.Commands;
 public record CreateAttentionAuthomaticCommand(int number) : IRequest<RequestResult>;
 
 public sealed class CreateAttentionAuthomaticCommandHandler : IRequestHandler<CreateAttentionAuthomaticCommand, RequestResult>
@@ -14,10 +15,10 @@ public sealed class CreateAttentionAuthomaticCommandHandler : IRequestHandler<Cr
 
     public async Task<RequestResult> Handle(CreateAttentionAuthomaticCommand command, CancellationToken cancellationToken)
     {
-        var result = await _iauthomatedProcessesRepository.ProcessAttentions(1, command.number);
+        ResultAuthomaticProcessAttentionDTO result = await _iauthomatedProcessesRepository.ProcessAttentions(1, command.number);
         if (!result.Success)
             return RequestResult.ErrorRecord(result.Message);
-        return RequestResult.SuccessUpdate(message: result.Message, data: result.Data);
+        return RequestResult.SuccessUpdate(message: result.Message, data: result.LstResultProcessAttentionsDTO);
     }
 }
 

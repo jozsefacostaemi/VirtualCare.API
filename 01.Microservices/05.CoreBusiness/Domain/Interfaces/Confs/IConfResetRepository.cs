@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Shared;
+using Shared.Common.RequestResult;
 
 namespace Domain.Interfaces.Confs
 {
     public interface IConfResetRepository
     {
-        Task<RequestResult> ResetAttentionsAndPersonStatus();
+        Task<bool> ResetAttentionsAndPersonStatus();
     }
 }

@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Shared;
+using Shared.Common.RequestResult;
 
 namespace Domain.Interfaces.BuildObjects
 {
     public interface IBuildObjectsRepository
     {
-        Task<RequestResult> CreatePatients(int number);
-        Task<RequestResult> CreateUsers(int number);
+        Task<bool> CreatePatients(int number);
+        Task<bool> CreateUsers(int number);
     }
 }

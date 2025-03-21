@@ -1,7 +1,8 @@
 ﻿using Domain.Interfaces.MedicalRecords;
 using MediatR;
 using Microsoft.AspNetCore.Http;
-using Shared;
+using Shared.Common.RequestResult;
+using SharedClasses._02.Core.DTOs;
 
 namespace Application.Modules.MedicalRecords.Commands;
 public record AssignAttentionCommand(Guid UserId) : IRequest<RequestResult>;
@@ -15,10 +16,10 @@ public sealed class AssignAttentionCommandHandler : IRequestHandler<AssignAttent
 
     public async Task<RequestResult> Handle(AssignAttentionCommand command, CancellationToken cancellationToken)
     {
-        var result = await IProcessMedicalRecordRepository.AssignAttention(command.UserId);
+        ResultProcessAttentionDTO result = await IProcessMedicalRecordRepository.AssignAttention(command.UserId);
         if (!result.Success)
             return RequestResult.ErrorRecord(result.Message);
-        return RequestResult.SuccessUpdate(message: result.Message, data: result.Data);
+        return RequestResult.SuccessUpdate(message: result.Message, data: result.AttentionDTO);
     }
 }
 

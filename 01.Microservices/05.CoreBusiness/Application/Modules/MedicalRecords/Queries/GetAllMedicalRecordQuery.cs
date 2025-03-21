@@ -1,8 +1,8 @@
-﻿using Application.Modules.MedicalRecord.Responses;
-using AutoMapper;
+﻿using AutoMapper;
 using Domain.Interfaces.MedicalRecords;
 using MediatR;
-using Shared;
+using Shared.Common.RequestResult;
+using SharedClasses._02.Core.Responses;
 
 namespace Application.Modules.MedicalRecord.Queries
 {

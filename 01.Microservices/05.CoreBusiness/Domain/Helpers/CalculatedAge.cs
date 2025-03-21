@@ -5,10 +5,11 @@ namespace Domain.Helpers
     public static class CalculatedAge
     {
         /* Función estatica que calcula la edad del paciente */
-        public static string YearsMonthsDays(DateTime birthDate)
+        public static string YearsMonthsDays(DateTime? birthDate)
         {
             var today = DateTime.Now;
-            var birthDateTime = new LocalDate(birthDate.Year, birthDate.Month, birthDate.Day);
+            if (!birthDate.HasValue) return string.Empty;
+            var birthDateTime = new LocalDate(birthDate.Value.Year, birthDate.Value.Month, birthDate.Value.Day);
             var currentDateTime = new LocalDate(today.Year, today.Month, today.Day);
             var period = Period.Between(birthDateTime, currentDateTime);
             string yearsString = period.Years > 1 ? $"{period.Years} años" : (period.Years == 1 ? "1 año" : string.Empty);

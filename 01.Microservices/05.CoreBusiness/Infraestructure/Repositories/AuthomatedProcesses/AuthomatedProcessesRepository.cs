@@ -3,8 +3,11 @@ using Domain.Entities;
 using Domain.Enums;
 using Domain.Interfaces.AuthomatedProcesses;
 using Domain.Interfaces.MedicalRecords;
+using Domain.Interfaces.Messages;
 using Microsoft.EntityFrameworkCore;
-using Shared;
+using Shared.Common.RequestResult;
+using SharedClasses._02.Core.DTOs;
+using SharedClasses._02.Core.Responses;
 
 namespace Infraestructure.Repositories.AuthomatedProcesses;
 
@@ -12,13 +15,15 @@ internal class AuthomatedProcessesRepository : IAuthomatedProcessesRepository
 {
     private readonly ApplicationDbContext _context;
     private readonly IProcessMedicalRecordRepository _IProcessMedicalRecordRepository;
-    public AuthomatedProcessesRepository(ApplicationDbContext context, IProcessMedicalRecordRepository IProcessMedicalRecordRepository)
+    private readonly IMessageService _messageService;
+    public AuthomatedProcessesRepository(ApplicationDbContext context, IProcessMedicalRecordRepository IProcessMedicalRecordRepository, IMessageService messageService)
     {
         _context = context;
         _IProcessMedicalRecordRepository = IProcessMedicalRecordRepository;
+        _messageService = messageService;
     }
     /* Función que procesa automaticamente la atención */
-    public async Task<RequestResult> ProcessAttentions(int opcion, int number)
+    public async Task<ResultAuthomaticProcessAttentionDTO> ProcessAttentions(int opcion, int number)
     {
         switch (opcion)
         {
@@ -33,55 +38,60 @@ internal class AuthomatedProcessesRepository : IAuthomatedProcessesRepository
             case 5:
                 return await ProcessesAttentions(number, 3);
             default:
-                return RequestResult.ErrorRecord();
+                return new ResultAuthomaticProcessAttentionDTO (false, _messageService.GetErrorOperation());
         }
     }
     /* Función que crea automaticamente la atención */
-    private async Task<RequestResult> CreateAttentions(int number)
+    private async Task<ResultAuthomaticProcessAttentionDTO> CreateAttentions(int number)
     {
-        List<RequestResult> lstResult = new();
+        List<ResultProcessAttentionDTO> lstResult = new();
         List<string> LstStates = new List<string> { PatientStateEnum.AVAILABLE.ToString(), PatientStateEnum.ATTENDED.ToString(), PatientStateEnum.CANCELLED.ToString(), PatientStateEnum.EMPTY.ToString() };
         List<Patient> patientsPendingAttention = await _context.Patients.Where(x => LstStates.Contains(x.PatientState.Code)).Take(number).ToListAsync();
-        List<RequestResult> lstRequestResult = new List<RequestResult>();
         foreach (var dr in patientsPendingAttention)
         {
-            var processCode = await _context.Services
+            string? processCode = await _context.Services
+                .Select(x => x.Code)
                     .OrderBy(c => Guid.NewGuid())
                     .FirstOrDefaultAsync();
 
-            var result = await _IProcessMedicalRecordRepository.CreateAttention(processCode.Code, dr.Id);
-            lstRequestResult.Add(result);
+            if (string.IsNullOrEmpty(processCode)) continue;
+
+            var result = await _IProcessMedicalRecordRepository.CreateAttention(processCode, dr.Id);
+            lstResult.Add(result);
         }
-        return RequestResult.SuccessOperation(data: lstRequestResult);
+        if (lstResult.Count > 0) return new ResultAuthomaticProcessAttentionDTO(true,_messageService.GetSucessOperation(),lstResult);
+        return new ResultAuthomaticProcessAttentionDTO(false, _messageService.GetInformationNotFound());
     }
     /* Función que asigna automaticamente la atención */
-    private async Task<RequestResult> AssignAttentions(int number)
+    private async Task<ResultAuthomaticProcessAttentionDTO> AssignAttentions(int number)
     {
-        List<RequestResult> lstResult = new();
+        List<ResultProcessAttentionDTO> lstResult = new();
         List<string> LstStates = new List<string> { PatientStateEnum.AVAILABLE.ToString(), PatientStateEnum.ATTENDED.ToString(), PatientStateEnum.CANCELLED.ToString(), PatientStateEnum.EMPTY.ToString() };
         List<User> patientsPendingAttention = await _context.Users.Where(x => LstStates.Contains(x.UserState.Code)).Take(number).ToListAsync();
         List<RequestResult> lstRequestResult = new List<RequestResult>();
         foreach (var dr in patientsPendingAttention)
         {
-            var processCode = await _context.Services
-                         .OrderBy(c => Guid.NewGuid())
-                         .FirstOrDefaultAsync();
+            string? processCode = await _context.Services
+              .Select(x => x.Code)
+                  .OrderBy(c => Guid.NewGuid())
+                  .FirstOrDefaultAsync();
 
-            if (processCode == null) continue;
+            if (string.IsNullOrEmpty(processCode)) continue;
 
-            var UserAvailable = await SearchFirstUserAvailable(processCode.Code);
+            var UserAvailable = await SearchFirstUserAvailable(processCode);
             if (UserAvailable.Success == true && UserAvailable.Data != null)
             {
-                var resultOperation = await _IProcessMedicalRecordRepository.AssignAttention((Guid)UserAvailable.Data);
+                ResultProcessAttentionDTO resultOperation = await _IProcessMedicalRecordRepository.AssignAttention((Guid)UserAvailable.Data);
                 lstResult.Add(resultOperation);
             }
         }
-        return RequestResult.SuccessOperation(data: lstRequestResult);
+        if (lstResult.Count > 0) return new ResultAuthomaticProcessAttentionDTO (true, _messageService.GetSucessOperation(), lstResult);
+        return new ResultAuthomaticProcessAttentionDTO (false, _messageService.GetInformationNotFound());
     }
     /* Función que aplica realiza operación de Asignación, Finalización y Cancelación */
-    private async Task<RequestResult> ProcessesAttentions(int number, int action)
+    private async Task<ResultAuthomaticProcessAttentionDTO> ProcessesAttentions(int number, int action)
     {
-        List<RequestResult> lstResult = new();
+        List<ResultProcessAttentionDTO> lstResult = new();
         List<MedicalRecord> patientsPendingAttention = new();
 
         // Determinar el estado de los registros médicos según la acción
@@ -102,7 +112,7 @@ internal class AuthomatedProcessesRepository : IAuthomatedProcessesRepository
         // Procesar los registros médicos según la acción
         foreach (var dr in patientsPendingAttention)
         {
-            RequestResult resultInProcess = action switch
+            ResultProcessAttentionDTO resultInProcess = action switch
             {
                 1 => await _IProcessMedicalRecordRepository.StartAttention(dr.Id),
                 2 => await _IProcessMedicalRecordRepository.FinishAttention(dr.Id),
@@ -112,8 +122,8 @@ internal class AuthomatedProcessesRepository : IAuthomatedProcessesRepository
 
             lstResult.Add(resultInProcess);
         }
-
-        return RequestResult.SuccessOperation(data: lstResult);
+        if (lstResult.Count > 0) return new ResultAuthomaticProcessAttentionDTO (true, _messageService.GetSucessOperation(), lstResult);
+        return new ResultAuthomaticProcessAttentionDTO (false, _messageService.GetInformationNotFound());
     }
     /* Función que consulta el primer personal asistencial disponible */
     public async Task<RequestResult> SearchFirstUserAvailable(string ProcessCode)

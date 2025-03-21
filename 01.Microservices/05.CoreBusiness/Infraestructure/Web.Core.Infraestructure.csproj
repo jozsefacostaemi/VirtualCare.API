@@ -21,11 +21,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\02.Shared\Shared\Shared.csproj" />
     <ProjectReference Include="..\..\02.Notifications\Notifications\Notifications.csproj" />
     <ProjectReference Include="..\..\03.Queues\Queues.Functions\Queues.Functions.csproj" />
     <ProjectReference Include="..\..\04.StateMachines\StateMachines\StateMachines.csproj" />
-    <ProjectReference Include="..\Application\Application.csproj" />
+    <ProjectReference Include="..\Application\Web.Core.Application.csproj" />
   </ItemGroup>
 
 </Project>

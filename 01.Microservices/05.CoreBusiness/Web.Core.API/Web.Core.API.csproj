@@ -25,10 +25,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\..\..\02.Shared\Shared\Shared.csproj" />
+		<ProjectReference Include="..\..\..\02.Shared\Shared\SharedClasses.csproj" />
 		<ProjectReference Include="..\..\03.Queues\Queues.Functions\Queues.Functions.csproj" />
-		<ProjectReference Include="..\Domain\Domain.csproj" />
-		<ProjectReference Include="..\Infraestructure\Infraestructure.csproj" />
+		<ProjectReference Include="..\Domain\Web.Core.Domain.csproj" />
+		<ProjectReference Include="..\Infraestructure\Web.Core.Infraestructure.csproj" />
 	</ItemGroup>
 
 

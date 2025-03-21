@@ -1,6 +1,6 @@
 ﻿using Domain.Interfaces.Monitoring;
 using MediatR;
-using Shared;
+using Shared.Common.RequestResult;
 
 namespace Application.Modules.Monitoring.Queries
 {
@@ -11,7 +11,12 @@ namespace Application.Modules.Monitoring.Queries
         public GetPercentAttentionsFinishQueryHanlde(IMonitoringRepository IMonitoringRepository) =>
             _IMonitoringRepository = IMonitoringRepository ?? throw new ArgumentNullException(nameof(IMonitoringRepository));
         public async Task<RequestResult> Handle(GetPercentAttentionsFinishQuery query, CancellationToken cancellationToken)
-        => await _IMonitoringRepository.GetPercentAttentionsFinish(null);
+        {
+            var result = await _IMonitoringRepository.GetPercentAttentionsFinish(null);
+            if (result == null)
+                return RequestResult.SuccessResultNoRecords();
+            return RequestResult.SuccessRecord(result);
+        }
     }
 }
 

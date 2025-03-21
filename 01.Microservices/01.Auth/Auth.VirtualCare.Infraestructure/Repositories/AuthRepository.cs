@@ -6,7 +6,7 @@ using Domain.Enums;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
-using Shared;
+using Shared._01.Auth.DTOs;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
@@ -29,14 +29,16 @@ namespace Auth.VirtualCare.Infraestructure.Repositories
 
         #region Public Methods
         /* Función que permite el login del usuario */
-        public async Task<RequestResult> Login(string username, string? password)
+        public async Task<LoginResultDTO> Login(string username, string? password)
         {
             var user = await GetByUserName(username);
             if (user == null)
-                return RequestResult.SuccessResultNoRecords(message: _IMessageService.GetInvalidCredentials());
+                return new LoginResultDTO { Success = false, Message = _IMessageService.GetInvalidCredentials() };
+
             var isCorrectPassword = password?.Equals(user.Password);
             if (isCorrectPassword == false)
-                return RequestResult.SuccessResultNoRecords(message: _IMessageService.GetInvalidCredentials());
+                return new LoginResultDTO { Success = false, Message = _IMessageService.GetInvalidCredentials() };
+
             DateTime TokenExpiryDate = DateTime.Now.AddMinutes(_jwtSettings.ExpiresMinutes);
             var newToken = CreateJwt(user, TokenExpiryDate);
             user.TokenExpiryDate = TokenExpiryDate;
@@ -44,22 +46,30 @@ namespace Auth.VirtualCare.Infraestructure.Repositories
             user.Loggued = true;
             user.AvailableAt = DateTime.Now;
             await _context.SaveChangesAsync();
-            return RequestResult.SuccessResult(message: _IMessageService.GetSuccessLogin(), data: newToken);
+
+            return new LoginResultDTO
+            {
+                Success = true,
+                Message = _IMessageService.GetSuccessLogin(),
+                Token = newToken,
+                TokenExpiryDate = TokenExpiryDate
+            };
         }
         /* Función que cierra la sesión del personal asistencial */
-        public async Task<RequestResult> LogOut(Guid UserId)
+        public async Task<LogoutResultDTO> LogOut(Guid UserId)
         {
             var user = await _context.Users.Include(x => x.UserState).Where(x => x.Id.Equals(UserId)).FirstOrDefaultAsync();
             if (user == null)
-                return RequestResult.SuccessResultNoRecords(message: "El personal asistencial no existe");
+                return new LogoutResultDTO { Success = false, Message = "El personal asistencial no existe", UserId = UserId };
             if (LstStatesCanNotLoggued.Contains(user.UserState.Code))
-                return RequestResult.SuccessResultNoRecords(message: "El personal asistencial tiene una atención Asignada o En proceso");
+                return new LogoutResultDTO { Success = false, Message = "El personal asistencial tiene una atención Asignada o En proceso", UserId = UserId };
             user.Loggued = false;
             user.AvailableAt = null;
             user.Token = null;
             user.TokenExpiryDate = null;
             await _context.SaveChangesAsync();
-            return RequestResult.SuccessResult(message: "LogOut Exitoso", data: UserId);
+            return new LogoutResultDTO { Success = true, Message = "LogOut Exitoso", UserId = UserId };
+
         }
         #endregion
 

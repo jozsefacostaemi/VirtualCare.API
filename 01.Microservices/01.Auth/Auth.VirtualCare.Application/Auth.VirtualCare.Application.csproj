@@ -11,11 +11,16 @@
 		<PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.11.0" />
 		<PackageReference Include="MediatR" Version="12.4.1" />
 		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.2" />
+		<PackageReference Include="Scrutor" Version="6.0.1" />
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\..\..\02.Shared\Shared\Shared.csproj" />
+		<ProjectReference Include="..\..\..\02.Shared\Shared\SharedClasses.csproj" />
 		<ProjectReference Include="..\Auth.VirtualCare.Domain\Auth.VirtualCare.Domain.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Folder Include="Modules\AuthomatedAuth\DTOs\" />
 	</ItemGroup>
 
 </Project>

@@ -23,7 +23,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\..\..\02.Shared\Shared\Shared.csproj" />
+		<ProjectReference Include="..\..\..\02.Shared\Shared\SharedClasses.csproj" />
 		<ProjectReference Include="..\..\02.Notifications\Notifications\Notifications.csproj" />
 		<ProjectReference Include="..\Auth.VirtualCare.Application\Auth.VirtualCare.Application.csproj" />
 		<ProjectReference Include="..\Auth.VirtualCare.Infraestructure\Auth.VirtualCare.Infraestructure.csproj" />

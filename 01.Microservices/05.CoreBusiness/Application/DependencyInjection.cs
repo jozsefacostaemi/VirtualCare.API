@@ -7,6 +7,8 @@ using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.Extensions.DependencyInjection;
+using Shared.Common.RequestResult;
+using Web.Core.API.Application.Common.Decorators;
 
 namespace Application
 {
@@ -22,6 +24,9 @@ namespace Application
             //Localization
             services.AddScoped<IMessageService, MessageService>();
             services.AddLocalization();
+
+            //Decorators
+            services.AddDecorators();
             return services;
         }
         private static IServiceCollection AddLocalization(this IServiceCollection services)
@@ -61,6 +66,30 @@ namespace Application
             });
             return services;
 
+        }
+
+        public static IServiceCollection AddDecorators(this IServiceCollection services)
+        {
+            var assembly = typeof(ApplicationAssemblyReference).Assembly;
+
+            // Encuentra todas las implementaciones de IRequestHandler, excluyendo los decoradores
+            var handlerTypes = assembly.GetTypes()
+                .Where(t => t.GetInterfaces().Any(i => i.IsGenericType && i.GetGenericTypeDefinition() == typeof(IRequestHandler<,>)) &&
+                            !typeof(IDecorators).IsAssignableFrom(t))
+                .ToList();
+            foreach (var handlerType in handlerTypes)
+            {
+                var interfaceType = handlerType.GetInterfaces().First(i => i.IsGenericType && i.GetGenericTypeDefinition() == typeof(IRequestHandler<,>));
+                var requestType = interfaceType.GetGenericArguments()[0];
+
+                if (typeof(IRequest<RequestResult>).IsAssignableFrom(requestType))
+                {
+                    // Registra el decorador para comandos y queries
+                    var decoratorType = typeof(ModuleCommandHandlerDecorator<>).MakeGenericType(requestType);
+                    services.Decorate(interfaceType, decoratorType);
+                }
+            }
+            return services;
         }
     }
 }

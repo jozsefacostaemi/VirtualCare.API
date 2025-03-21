@@ -483,3 +483,186 @@
 2025-03-18 14:49:31.6680 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\01.Auth\Auth.VirtualCare.API\bin\Debug\net9.0\nlog.config
 2025-03-18 14:49:31.6680 Info Configuration initialized.
 2025-03-18 14:49:34.1426 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\01.Auth\Auth.VirtualCare.API\bin\Debug\net9.0\nlog.config
+2025-03-20 10:34:57.1954 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-20 10:34:57.2240 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-20 10:34:57.2240 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-20 10:34:57.2240 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-20 10:34:57.2477 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\01.Auth\Auth.VirtualCare.API\bin\Debug\net9.0\nlog.config
+2025-03-20 10:34:57.2477 Info Configuration initialized.
+2025-03-20 10:38:42.2730 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-20 10:38:42.2795 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-20 10:38:42.2795 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-20 10:38:42.2795 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-20 10:38:42.3035 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\01.Auth\Auth.VirtualCare.API\bin\Debug\net9.0\nlog.config
+2025-03-20 10:38:42.3142 Info Configuration initialized.
+2025-03-20 10:45:26.1094 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-20 10:45:26.1094 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-20 10:45:26.1094 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-20 10:45:26.1094 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-20 10:45:26.1360 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\01.Auth\Auth.VirtualCare.API\bin\Debug\net9.0\nlog.config
+2025-03-20 10:45:26.1438 Info Configuration initialized.
+2025-03-20 10:48:22.6374 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-20 10:48:22.6439 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-20 10:48:22.6439 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-20 10:48:22.6439 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-20 10:48:22.6645 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\01.Auth\Auth.VirtualCare.API\bin\Debug\net9.0\nlog.config
+2025-03-20 10:48:22.6725 Info Configuration initialized.
+2025-03-20 10:52:24.9608 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-20 10:52:24.9681 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-20 10:52:24.9681 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-20 10:52:24.9681 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-20 10:52:24.9916 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\01.Auth\Auth.VirtualCare.API\bin\Debug\net9.0\nlog.config
+2025-03-20 10:52:24.9995 Info Configuration initialized.
+2025-03-20 10:52:51.8235 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-20 10:52:51.8299 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-20 10:52:51.8299 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-20 10:52:51.8299 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-20 10:52:51.8525 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\01.Auth\Auth.VirtualCare.API\bin\Debug\net9.0\nlog.config
+2025-03-20 10:52:51.8606 Info Configuration initialized.
+2025-03-20 10:52:52.4750 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\01.Auth\Auth.VirtualCare.API\bin\Debug\net9.0\nlog.config
+2025-03-20 10:53:02.9950 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-20 10:53:03.0058 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-20 10:53:03.0058 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-20 10:53:03.0058 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-20 10:53:03.0385 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\01.Auth\Auth.VirtualCare.API\bin\Debug\net9.0\nlog.config
+2025-03-20 10:53:03.0493 Info Configuration initialized.
+2025-03-20 10:53:20.4943 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-20 10:53:20.5004 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-20 10:53:20.5004 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-20 10:53:20.5004 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-20 10:53:20.5248 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\01.Auth\Auth.VirtualCare.API\bin\Debug\net9.0\nlog.config
+2025-03-20 10:53:20.5323 Info Configuration initialized.
+2025-03-20 10:53:50.0635 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-20 10:53:50.0696 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-20 10:53:50.0696 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-20 10:53:50.0696 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-20 10:53:50.0924 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\01.Auth\Auth.VirtualCare.API\bin\Debug\net9.0\nlog.config
+2025-03-20 10:53:50.0924 Info Configuration initialized.
+2025-03-20 10:53:52.6606 Info Shutdown() called. Logger closing...
+2025-03-20 10:53:52.6606 Info Closing old configuration.
+2025-03-20 10:53:52.6606 Info Logger has been closed down.
+2025-03-20 10:53:52.6606 Info AppDomain Shutting down. LogFactory closing...
+2025-03-20 10:53:52.6689 Info LogFactory has been closed.
+2025-03-20 10:58:06.7363 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-20 10:58:06.7363 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-20 10:58:06.7363 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-20 10:58:06.7363 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-20 10:58:06.7649 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\01.Auth\Auth.VirtualCare.API\bin\Debug\net9.0\nlog.config
+2025-03-20 10:58:06.7649 Info Configuration initialized.
+2025-03-20 10:58:47.5638 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-20 10:58:47.5931 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-20 10:58:47.5931 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-20 10:58:47.5931 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-20 10:58:47.6158 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\01.Auth\Auth.VirtualCare.API\bin\Debug\net9.0\nlog.config
+2025-03-20 10:58:47.6231 Info Configuration initialized.
+2025-03-20 10:58:49.6895 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\01.Auth\Auth.VirtualCare.API\bin\Debug\net9.0\nlog.config
+2025-03-20 11:00:29.1521 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-20 11:00:29.1579 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-20 11:00:29.1579 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-20 11:00:29.1579 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-20 11:00:29.1826 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\01.Auth\Auth.VirtualCare.API\bin\Debug\net9.0\nlog.config
+2025-03-20 11:00:29.1903 Info Configuration initialized.
+2025-03-20 11:00:29.8623 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\01.Auth\Auth.VirtualCare.API\bin\Debug\net9.0\nlog.config
+2025-03-20 12:38:33.4669 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-20 12:38:33.5085 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-20 12:38:33.5085 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-20 12:38:33.5177 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-20 12:38:33.5541 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\01.Auth\Auth.VirtualCare.API\bin\Debug\net9.0\nlog.config
+2025-03-20 12:38:33.5694 Info Configuration initialized.
+2025-03-20 12:40:12.9831 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-20 12:40:12.9916 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-20 12:40:12.9916 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-20 12:40:12.9916 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-20 12:40:13.0249 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\01.Auth\Auth.VirtualCare.API\bin\Debug\net9.0\nlog.config
+2025-03-20 12:40:13.0360 Info Configuration initialized.
+2025-03-20 12:41:40.3145 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-20 12:41:40.3243 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-20 12:41:40.3243 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-20 12:41:40.3298 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-20 12:41:40.3567 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\01.Auth\Auth.VirtualCare.API\bin\Debug\net9.0\nlog.config
+2025-03-20 12:41:40.3567 Info Configuration initialized.
+2025-03-20 12:42:15.0073 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-20 12:42:15.0178 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-20 12:42:15.0178 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-20 12:42:15.0178 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-20 12:42:15.0507 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\01.Auth\Auth.VirtualCare.API\bin\Debug\net9.0\nlog.config
+2025-03-20 12:42:15.0641 Info Configuration initialized.
+2025-03-20 12:43:47.0323 Info Shutdown() called. Logger closing...
+2025-03-20 12:43:47.0323 Info Closing old configuration.
+2025-03-20 12:43:47.0732 Info Logger has been closed down.
+2025-03-20 12:43:47.0764 Info AppDomain Shutting down. LogFactory closing...
+2025-03-20 12:43:47.0764 Info LogFactory has been closed.
+2025-03-20 12:44:51.3137 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-20 12:44:51.3670 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-20 12:44:51.3670 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-20 12:44:51.3754 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-20 12:44:51.4122 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\01.Auth\Auth.VirtualCare.API\bin\Debug\net9.0\nlog.config
+2025-03-20 12:44:51.4268 Info Configuration initialized.
+2025-03-20 12:51:07.1667 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-20 12:51:07.1748 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-20 12:51:07.1748 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-20 12:51:07.1748 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-20 12:51:07.2035 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\01.Auth\Auth.VirtualCare.API\bin\Debug\net9.0\nlog.config
+2025-03-20 12:51:07.2166 Info Configuration initialized.
+2025-03-20 12:51:26.0724 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-20 12:51:26.0854 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-20 12:51:26.0854 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-20 12:51:26.0917 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-20 12:51:26.1182 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\01.Auth\Auth.VirtualCare.API\bin\Debug\net9.0\nlog.config
+2025-03-20 12:51:26.1315 Info Configuration initialized.
+2025-03-20 12:51:53.1132 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-20 12:51:53.1223 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-20 12:51:53.1223 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-20 12:51:53.1223 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-20 12:51:53.1528 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\01.Auth\Auth.VirtualCare.API\bin\Debug\net9.0\nlog.config
+2025-03-20 12:51:53.1528 Info Configuration initialized.
+2025-03-20 12:56:29.1225 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\01.Auth\Auth.VirtualCare.API\bin\Debug\net9.0\nlog.config
+2025-03-20 12:57:19.3317 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-20 12:57:19.3422 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-20 12:57:19.3422 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-20 12:57:19.3422 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-20 12:57:19.3798 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\01.Auth\Auth.VirtualCare.API\bin\Debug\net9.0\nlog.config
+2025-03-20 12:57:19.3949 Info Configuration initialized.
+2025-03-20 12:57:22.5425 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\01.Auth\Auth.VirtualCare.API\bin\Debug\net9.0\nlog.config
+2025-03-20 13:08:18.8697 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-20 13:08:18.9031 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-20 13:08:18.9031 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-20 13:08:18.9031 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-20 13:08:18.9434 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\01.Auth\Auth.VirtualCare.API\bin\Debug\net9.0\nlog.config
+2025-03-20 13:08:18.9535 Info Configuration initialized.
+2025-03-20 13:08:31.2312 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\01.Auth\Auth.VirtualCare.API\bin\Debug\net9.0\nlog.config
+2025-03-21 09:02:20.4157 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-21 09:02:20.4273 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-21 09:02:20.4273 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-21 09:02:20.4273 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-21 09:02:20.4629 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\01.Auth\Auth.VirtualCare.API\bin\Debug\net9.0\nlog.config
+2025-03-21 09:02:20.4772 Info Configuration initialized.
+2025-03-21 09:02:23.4742 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\01.Auth\Auth.VirtualCare.API\bin\Debug\net9.0\nlog.config
+2025-03-21 09:09:12.6868 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-21 09:09:12.6982 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-21 09:09:12.6982 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-21 09:09:12.7038 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-21 09:09:12.7345 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\01.Auth\Auth.VirtualCare.API\bin\Debug\net9.0\nlog.config
+2025-03-21 09:09:12.7345 Info Configuration initialized.
+2025-03-21 09:09:13.6873 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\01.Auth\Auth.VirtualCare.API\bin\Debug\net9.0\nlog.config
+2025-03-21 09:12:24.2992 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-21 09:12:24.3213 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-21 09:12:24.3213 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-21 09:12:24.3333 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-21 09:12:24.3770 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\01.Auth\Auth.VirtualCare.API\bin\Debug\net9.0\nlog.config
+2025-03-21 09:12:24.3991 Info Configuration initialized.
+2025-03-21 09:12:27.6661 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\01.Auth\Auth.VirtualCare.API\bin\Debug\net9.0\nlog.config
+2025-03-21 09:47:08.0873 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-21 09:47:08.1202 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-21 09:47:08.1202 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-21 09:47:08.1272 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-21 09:47:08.1723 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\01.Auth\Auth.VirtualCare.API\bin\Debug\net9.0\nlog.config
+2025-03-21 09:47:08.1879 Info Configuration initialized.
+2025-03-21 09:47:12.2546 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\01.Auth\Auth.VirtualCare.API\bin\Debug\net9.0\nlog.config
+2025-03-21 10:04:37.3955 Info Registered target NLog.Targets.FileTarget(Name=All_Logs)
+2025-03-21 10:04:37.4122 Info Registered target NLog.Targets.FileTarget(Name=Log_Warning)
+2025-03-21 10:04:37.4122 Info Registered target NLog.Targets.FileTarget(Name=Log_Error)
+2025-03-21 10:04:37.4265 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-21 10:04:37.4886 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\01.Auth\Auth.VirtualCare.API\bin\Debug\net9.0\nlog.config
+2025-03-21 10:04:37.5223 Info Configuration initialized.
+2025-03-21 10:04:41.4517 Info Validating config: TargetNames=All_Logs, Log_Warning, Log_Error, ConfigItems=36, FilePath=C:\Projects\Backend\VirtualCare.API\01.Microservices\01.Auth\Auth.VirtualCare.API\bin\Debug\net9.0\nlog.config

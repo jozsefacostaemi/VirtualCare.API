@@ -1,9 +1,10 @@
 ﻿using Shared;
+using Shared._01.Auth.DTOs;
 
 namespace Auth.VirtualCare.Domain.Interfaces.Auth;
 public interface IAuthRepository
 {
-    Task<RequestResult> Login(string username, string? password);
-    Task<RequestResult> LogOut(Guid UserId);
+    Task<LoginResultDTO> Login(string username, string? password);
+    Task<LogoutResultDTO> LogOut(Guid UserId);
 
 }

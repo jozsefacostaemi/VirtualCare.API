@@ -1,6 +1,6 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using Shared;
+using Shared.Common.RequestResult;
 using System.Net;
 using System.Text;
 using System.Text.Json;

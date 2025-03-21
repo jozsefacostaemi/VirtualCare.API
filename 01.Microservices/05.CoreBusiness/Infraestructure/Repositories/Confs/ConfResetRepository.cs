@@ -2,7 +2,7 @@
 using Domain.Interfaces.Confs;
 using Domain.Interfaces.Queues;
 using Microsoft.EntityFrameworkCore;
-using Shared;
+using Shared.Common.RequestResult;
 using Web.Core.Business.API.Infraestructure.Persistence.Repositories.Queue;
 
 namespace Infraestructure.Repositories.Confs
@@ -19,7 +19,7 @@ namespace Infraestructure.Repositories.Confs
 
         #region Public Methods
         /* Función que devuelve la información de las atenciones */
-        public async Task<RequestResult> ResetAttentionsAndPersonStatus()
+        public async Task<bool> ResetAttentionsAndPersonStatus()
         {
             await deleteProcessMessageErrorLog();
             await deleteProcessMessage();
@@ -27,7 +27,7 @@ namespace Infraestructure.Repositories.Confs
             await deleteAttentions();
             await updateStatusPersons();
             await _IQueueRepository.GeneratedConfigQueues();
-            return RequestResult.SuccessOperation();
+            return true;
         }
         #endregion
 

@@ -1,17 +1,12 @@
 ﻿using Application.Data;
-using Domain.Primitives;
 using MediatR;
-using Microsoft.EntityFrameworkCore.ChangeTracking;
 using Microsoft.EntityFrameworkCore;
 using Domain.Entities;
 public class ApplicationDbContext : DbContext, IApplicationDbContext
 {
-    private readonly IPublisher _publisher;
-    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options, IPublisher publisher)
+    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
         : base(options)
-    {
-        _publisher = publisher ?? throw new ArgumentNullException(nameof(publisher));
-    }
+    { }
 
     public DbSet<MedicalRecord> MedicalRecords { get; set; }
     public DbSet<BusinessLine> BusinessLines { get; set; }
@@ -1149,15 +1144,15 @@ public class ApplicationDbContext : DbContext, IApplicationDbContext
         });
     }
 
-    public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = new CancellationToken())
-    {
-        var domainEvents = ChangeTracker.Entries<AggregateRoot>()
-            .Select(e => e.Entity)
-            .Where(x => x.GetDomainEvents().Any())
-            .SelectMany(e => e.GetDomainEvents());
-        var result = await base.SaveChangesAsync(cancellationToken);
-        foreach (var publish in domainEvents)
-            await _publisher.Publish(publish, cancellationToken);
-        return result;
-    }
+    //public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = new CancellationToken())
+    //{
+    //    var domainEvents = ChangeTracker.Entries<AggregateRoot>()
+    //        .Select(e => e.Entity)
+    //        .Where(x => x.GetDomainEvents().Any())
+    //        .SelectMany(e => e.GetDomainEvents());
+    //    var result = await base.SaveChangesAsync(cancellationToken);
+    //    foreach (var publish in domainEvents)
+    //        await _publisher.Publish(publish, cancellationToken);
+    //    return result;
+    //}
 }

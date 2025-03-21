@@ -1,7 +1,7 @@
 ﻿using FluentValidation;
 using MediatR;
 using Microsoft.Extensions.Logging;
-using Shared;
+using Shared.Common.RequestResult;
 using System.Globalization;
 using System.Text.Json;
 
@@ -19,9 +19,9 @@ public class ValidationBehavior<TRequest, TResponse> : IPipelineBehavior<TReques
     }
 
     public async Task<TResponse> Handle(
-        TRequest request,
-        RequestHandlerDelegate<TResponse> next,
-        CancellationToken cancellationToken)
+    TRequest request,
+    RequestHandlerDelegate<TResponse> next,
+    CancellationToken cancellationToken)
     {
         ValidatorOptions.Global.LanguageManager.Culture = new CultureInfo("es-ES");
 
@@ -36,17 +36,14 @@ public class ValidationBehavior<TRequest, TResponse> : IPipelineBehavior<TReques
         var errors = validationResult.Errors
             .Select(validationFailure => $"{validationFailure.PropertyName}: {validationFailure.ErrorMessage}")
             .ToList();
-        var responseType = typeof(TResponse);
-        var resultType = typeof(RequestResult).MakeGenericType(responseType.GenericTypeArguments[0]);
-        var errorResult = Activator.CreateInstance(resultType) as IRequestResult;
 
-        if (errorResult != null)
-        {
-            errorResult.Success = false;
-            errorResult.Message = "Validaciones: " + string.Join(',', errors);
-            errorResult.Module = typeof(TRequest).Name;
-        }
+        // Crear una instancia de RequestResult directamente
+        var errorResult = new RequestResult(null, false, "Validaciones: " + string.Join(',', errors), typeof(TRequest).Name);
+
         _logger.LogWarning("Warning validación: " + JsonSerializer.Serialize(errorResult));
-        return errorResult != null ? (TResponse)errorResult : throw new Exception("Handle Validation Behavior null");
+
+        // Convertir el errorResult a TResponse
+        return (TResponse)(object)errorResult;
     }
+
 }
